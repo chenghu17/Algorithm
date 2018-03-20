@@ -55,7 +55,7 @@
              指针调用（void swap(int *x, int *y){ tmp = *x }  swap(&a, &b);）
              引用调用 (void swap(int &a, int &b){ tmp = a }  swap(a,b);)
     参数的默认值 (void swap(int a=10, int b=20))
-    Lambda函数与表达式 ？？？？
+    Lambda函数与表达式 ？？？？(还不是特别了解)
 
 12、数字
     short、int、float、double、long
@@ -83,3 +83,29 @@
     c++中的string类，#include<string> string a="hello";cout<<a.size()<<endl;
 
 15、指针
+    指针的值 和 指针的所指向的变量或常量 要区分
+    指针是一个变量，指针的值是其所指向变量或常量在内存中的地址
+    一般操作为：定义一个指针变量、把变量地址赋值给指针、访问指针变量中可用地址的值
+    int var=20; int *p; p=&var;cout<<var<<p<<*p<<endl; （20，地址，20）
+    c++中的Null指针：int *ptr=NULL; cout<<ptr; (输出值为 0 即地址为0)
+                    用处：可以给指针初始化为NULL，在使用之前进行判断if(!ptr)，即为非空指针，已经赋值，避免访问到操作系统预留的内存空间
+    c++指针的算术运算：ptr指向地址1000的整数指针，是一个32为的整数，即4个字节，若进行ptr++操作，则会指向地址1004，不是1001，
+                        因为ptr每增加一次，会指向下一个整数位置，即当前位置往后移4个字节，如果ptr指向字符，则ptr++之后的地址则为1001
+                     递增一个指针：变量指针可以递增，而数组不能递增，因为数组是一个常量指针：int var[3]={1,2,3};int *ptr;ptr=var;ptr++;
+                     递减一个指针：ptr=&var[MAX-1];ptr--;
+                     指针的比较：ptr=var;if(ptr<=&var[MAX-1]){... ptr++;}
+    c++指针数组：int *ptr[MAX]; （还不是特别了解）
+    c++指向指针的指针：多级间接寻址
+                     int var; int *ptr; int **pptr;
+                     ptr = &var; pptr = &ptr;
+    c++传递指针给函数：void function(int *par){};   可以传递指针，当然也可以传递数组
+    c++从函数返回指针：首先声明一个返回指针的函数；c++不支持在函数外返回局部变量的地址，所以需要将局部变量定义为static
+                     int *getNumber(){ static int r[10];    return r;}
+
+16、引用
+    引用vs指针：1、不存在空引用。引用必须连接到一块合法的内存。
+               2、一旦引用被初始化为一个对象，就不能被指向到另一个对象。指针可以在任何时候指向到另一个对象。
+               3、引用必须在创建时被初始化。指针可以在任何时间被初始化。
+    int i=17; int& r=i; //r 是一个初始化为 i 的整型引用
+    把引用当作参数：void swap(int& a, int& b){...}  int a=10,b=20;swap(a,b); 引用就是别名，指向的内存地址是一样的
+    把应用当作返回值：返回的引用类型值，要么属于全局变量，要么被static修饰

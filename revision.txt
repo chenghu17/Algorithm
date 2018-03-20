@@ -4,6 +4,82 @@
     terminal进行编译：g++ hello.cpp -o hello // -o 指定可执行程序的文件名
                      ./hello    //执行生成的可执行文件
 2、数据类型
+    内置数据类型：bool、char、int、float、double、void、wchar_t
+    类型修饰符：signed、unsigned、short、long
+    用户自定义：typedef int C
 
 3、变量类型
-    申明与定义的区别
+    声明：extern int a,b; void foo();
+    定义：int a; void foo() { ... }
+
+4、变量作用域
+    局部变量、全局变量
+
+5、常量
+    常量可以是任何的基本数据类型；
+    整数常量可以是十进制、八进制、十六进制，前缀为0x或0X为十六进制,0为八进制
+    整数常量可以带一个后缀，U为无符号unsigned，L表示长整数long
+    还有浮点常量、布尔常量、字符常量、字符串常量
+    定义常量：#define LENGTH 10
+             const int LENGTH = 10;
+
+6、修饰符类型
+    signed、unsigned、long、short、const、volatile、restrict
+
+7、存储类（这个貌似之前没有关注过～）
+    存储类定义C++程序中变量/函数的范围（可见性）和生命周期，这些说明符放置在它们修饰的类型之前。
+    auto：
+    register：
+    static：
+    extern：
+    mutable：
+    thread_local(C++)：
+
+8、运算符
+    算术、关系、逻辑、位运算、赋值、杂项
+    运算符的优先级
+
+9、循环
+    循环类型：while、for、do...while、嵌套循环
+    循环控制语句：break、continue、goto
+
+10、判断
+    判断语句：if、if...else、嵌套if、switch、嵌套switch
+    ？：运算符：a > 1 ? return 1:return 2;
+
+11、函数
+    函数声明：告诉编译器函数的名称、返回类型、参数
+    函数定义：提供函数的实际主体
+    函数调用
+    函数参数：传值调用、
+             指针调用（void swap(int *x, int *y){ tmp = *x }  swap(&a, &b);）
+             引用调用 (void swap(int &a, int &b){ tmp = a }  swap(a,b);)
+    参数的默认值 (void swap(int a=10, int b=20))
+    Lambda函数与表达式 ？？？？
+
+12、数字
+    short、int、float、double、long
+    数学运算：c++中包含各种有用的内置函数，如<cmath>
+    随机数生成：rand()，该函数返回一个伪随机数，生成随机数之前必须先调用srand()，
+                可以使用<ctime>中的time()获取当前时间来设置srand()的种子参数
+
+13、数组
+    数组声明，需要指定元素的类型和元素的数量
+    所有数组都是由连续的内存位置组成。最低的地址对应第一个元素，最高的地址对应最后一个元素。
+    声明数组、数组赋值、访问数组
+    多为数组：int a[3][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12}}
+    指向数组的指针： double *p;double balance[10];p=balance;cout<<*p<<*(p+1)<<*(p+2)<<endl;
+    传递数组给函数：void function1(int *param){...}
+                  void function2(int param[10]){...}
+                  void function3(int param[]){...}
+    从函数返回数组：C++不允许返回一个完整的数组作为函数的参数，但是可以通过指定不带索引的数组名来返回一个
+                    指向数组的指针，函数需要声明为返回指针的函数。且c++不支持在函数外访问返回的局部变量地址，因此局部变量定义为static变量
+                    int *function(){ static int r[10]; ... return r;}
+
+14、字符串
+    c风格字符串：源于c语言，并在C++中继续得到支持，如char a[]="hello";或char a[6]={'h','e','l','l','o','\0'};
+    在这种情况下，属于c语言风格的字符串，c++提供内置函数<cstring>，其中的常用函数有strcpy(s1,s2);strlen(s1)等；
+    注意：此处的字符串，不能写成string a = "hello"，因为string不是基本的数据类型，而是c++标准库中的一个类类型。
+    c++中的string类，#include<string> string a="hello";cout<<a.size()<<endl;
+
+15、指针

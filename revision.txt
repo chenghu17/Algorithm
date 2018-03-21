@@ -109,3 +109,29 @@
     int i=17; int& r=i; //r 是一个初始化为 i 的整型引用
     把引用当作参数：void swap(int& a, int& b){...}  int a=10,b=20;swap(a,b); 引用就是别名，指向的内存地址是一样的
     把应用当作返回值：返回的引用类型值，要么属于全局变量，要么被static修饰
+
+17、日期&时间
+    c++标准库没有提供所谓的日期类型，c++继承类c语言用于日期和时间操作的结构和函数，头文件为<ctime>
+    四个时间相关的类型：clock_t、time_t、size_t、tm，其中前三种都能够把系统时间和日期表示为某种整数。
+    tm属于结构体类型
+    活用各种日期和时间的重要函数：time()、ctime()、localtime()...
+    使用结构tm格式化时间：time_t now = time(0); tm *ltm = localtime(&now); cout<<ltm->year<<endl;
+
+18、基本的输入输出
+    c++的I/O发生在流中，流是字节序列，如果字节流从设备流向内存，则是输入操作；反之为输出操作。
+    I/O库头文件：<iostream>:cin,cout,cerr,clog
+                <iomanip>: 该文件通过所谓的参数化的流操纵器，来声明对执行标准化I/O有用的服务
+                <fstream>:该文件为用户控制的文件处理声明服务。
+    <iostream>:cin、cout不多做介绍；
+               cerr为标准错误流，cerr对象附属到标准错误设备，通常是显示屏，但是cerr对象是非缓冲的，且每个流插入到cerr都会立即输出
+               clog为标准日志流，clog对象附属到标准错误设备，通常是显示屏，但是clog对象是缓冲的，意味着每个流插入到clog都会先存储在缓冲中，直到缓冲填满或者缓冲区刷新时才会输出
+               注：在编写和执行大型程序时，它们之间的差异就变得非常明显。所以良好的编程实践告诉我们，使用cerr流来显示错误消息，而其他的日志消息则使用clog流来输出。
+
+19、数据结构
+    c/c++数组允许定义可存储相同类型数据项的变量，但是结构(结构体)是c++中另一种用户自定义的可用数据类型，允许存储不同类型的数据项
+    struct Book{char title[50];char author[50];char subject[50];int bood_id};
+    或者 struct Book{char title[50];char author[50];char subject[50];int bood_id} book1;
+    使用成员访问运算符(.)来访问结构体的成员：Book book1; cout<<book1.title<<endl;
+    结构作为函数参数：传参方式和其他类型的变量或指针类似
+    指向结构的指针：struct Book *struct_ptr; struct_ptr=&book1;count<<struct_ptr->title<<endl;
+    typeset关键字: typedef struct{char title[50];char author[50];char subject[50];int bood_id}Book; Book boo1,boo2;

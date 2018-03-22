@@ -4,3 +4,7 @@ project(Algorithm)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(Algorithm main.cpp)
+
+add_executable(two_sum Two_Sum.cpp)
+
+add_executable(removeDuplicates removeDuplicates.cpp)

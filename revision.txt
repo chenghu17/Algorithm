@@ -135,3 +135,27 @@
     结构作为函数参数：传参方式和其他类型的变量或指针类似
     指向结构的指针：struct Book *struct_ptr; struct_ptr=&book1;count<<struct_ptr->title<<endl;
     typeset关键字: typedef struct{char title[50];char author[50];char subject[50];int bood_id}Book; Book boo1,boo2;
+
+20、C++类&对象
+    关键字public、private、protected可以确定类成员的访问属性；
+    公共成员可以使用直接成员访问运算符 (.) 来直接访问；
+    私有的成员和受保护的成员不能使用直接成员访问运算符 (.) 来直接访问；
+    类成员函数：类成员函数是类的一个成员，它可以操作类的任意对象，可以访问对象中的所有成员。
+               成员函数可以定义在类定义内部，或者单独使用范围解析运算符 :: 来定义; ::可以不跟类名，表示全局数据或全局函数（即非成员函数）。
+               在类定义中定义的成员函数把函数声明为内联的，即便没有使用 inline 标识符。
+               在类的外部使用范围解析运算符::定义该函数：char[] Book::getTitle(void){return title;}
+    类访问修饰符：public：公有成员在程序中类的外部是可访问的；
+                private：私有成员变量或函数在类的外部是不可访问的，甚至是不可查看的。只有类和友元函数可以访问私有成员。
+                         默认情况下，类的所有成员都是私有的
+                protected：保护成员变量或函数与私有成员十分相似，都不能在类的外部访问；但有一点不同，保护成员在派生类（即子类）中是可访问的。
+                          即子类的成员方法可以访问父类的保护成员变量
+                继承：public继承：基类的public、protected、private成员的访问属性在派生类中变成了public、protected、private
+                     private继承：基类的public、protected、private成员的访问属性在派生类中变成了private、private、private
+                     protected继承：基类的public、protected、private成员的访问属性在派生类中变成了protected、protected、private
+    类构造函数&析构函数：构造函数：类的构造函数是类的一种特殊的成员函数，它会在每次创建类的新对象时执行。构造函数的名称与类的名称是
+                               完全相同的，并且不会返回任何类型，也不会返回 void。构造函数可用于为某些成员变量设置初始值。可以无参，也可以有参；
+                               class Book{...}; Book::Book(char[] Title){title=Title;}
+                               等价于使用初始化列表来初始化字段：class Book{...}; Book::Book(char[] Title):title(Title){...} 多个参数则用(,)分开
+                       析构函数：类的析构函数是类的一种特殊的成员函数，它会在每次删除所创建的对象时执行。析构函数的名称与类的名称是完全相同的，只是在前面
+                                加了个波浪号（~）作为前缀，它不会返回任何值，也不能带有任何参数。析构函数有助于在跳出程序（比如关闭文件、释放内存等）前释放资源。
+                                ～Line:Line(void){...}

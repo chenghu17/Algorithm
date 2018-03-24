@@ -14,6 +14,7 @@ int main(){
     int target = 6;
     vector<int> result = twoSum(nums,target);
     cout<<result[0]<<result[1]<<endl;
+    return 0;
 
 }
 

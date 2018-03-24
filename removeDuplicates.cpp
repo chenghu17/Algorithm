@@ -17,6 +17,7 @@ int main(){
     for(int i=0;i<index;i++){
         cout<<i<<":"<<nums[i]<<endl;
     }
+    return 0;
 
 }
 

@@ -10,3 +10,5 @@ add_executable(two_sum Two_Sum.cpp)
 add_executable(removeDuplicates removeDuplicates.cpp)
 
 add_executable(Judge_Square Judge_Square.cpp)
+
+add_executable(Reverse_Integer Reverse_Integer.cpp)

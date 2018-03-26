@@ -8,35 +8,37 @@
 // 对于无符号（unsigned int）其范围在[0~4294967295]的闭区间 2^32-1
 
 #include <iostream>
+
 using namespace std;
+
 class Solution {
-    public:
+public:
     int reverse(int x) {
         int count = 0;
         long long result = 0;
         bool negative = false;
-        if(x<0){
+        if (x < 0) {
             negative = true;
             x = -x;
         }
-        while(x>0){
-            result = result * 10 + x%10 ;
-            x = x/10;
+        while (x > 0) {
+            result = result * 10 + x % 10;
+            x = x / 10;
         }
-        if(result>INT_MAX)
+        if (result > INT_MAX)
             return 0;
-        if(negative)
+        if (negative)
             result = -result;
         return result;
     }
 };
 
-int main(){
+int main() {
     int x;
-    cin>>x;
+    cin >> x;
     Solution solution;
     int result = solution.reverse(x);
-    cout<<result<<endl;
+    cout << result << endl;
     return 0;
 
 }

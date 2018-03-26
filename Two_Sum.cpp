@@ -5,33 +5,34 @@
 
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
-vector<int> twoSum(vector<int>& nums, int target);
+vector<int> twoSum(vector<int> &nums, int target);
 
-int main(){
-    vector<int> nums = {3,2,4};
+int main() {
+    vector<int> nums = {3, 2, 4};
     int target = 6;
-    vector<int> result = twoSum(nums,target);
-    cout<<result[0]<<result[1]<<endl;
+    vector<int> result = twoSum(nums, target);
+    cout << result[0] << result[1] << endl;
     return 0;
 
 }
 
-vector<int> twoSum(vector<int>& nums, int target) {
+vector<int> twoSum(vector<int> &nums, int target) {
     vector<int> result;
     long number = nums.size();
     bool isRight = false;
-    for(int i=0;i<number;i++){
-        for(int j=i+1;j<number;j++){
-            if(nums[i]+nums[j]==target){
+    for (int i = 0; i < number; i++) {
+        for (int j = i + 1; j < number; j++) {
+            if (nums[i] + nums[j] == target) {
                 result.push_back(i);
                 result.push_back(j);
-                isRight=true;
+                isRight = true;
                 break;
             }
-        if(isRight)
-            break;
+            if (isRight)
+                break;
         }
     }
     return result;

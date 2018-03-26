@@ -6,41 +6,40 @@
 // 题目是一个非负数的各位数用vector表示，高位在前，个位在后
 // 给这个数字个位加一，需要判断进位，以及一直进位下去需要在开头添加一个新数字的情况
 // 先考虑不进位的情况，加了之后直接返回结果
-// 对于进位的情况，
+// 对于进位的情况，则将当前位更新为0，此时则变成了对高一位加一操作的判断，有点迭代的味道
 
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 class Solution {
-    public:
-        vector<int> plusOne(vector<int>& digits) {
-            auto size = digits.size();
-            int i;
-            for(i=size-1;i>=0;i--){
-                if(digits[i]+1!=10){
-                    digits[i] += 1;
-                    return digits;
-                }
-                else{
-                    digits[i] = 0;
-                    //digits[i-1] += 1
-                }
+public:
+    vector<int> plusOne(vector<int> &digits) {
+        auto size = digits.size();
+        int i;
+        for (i = size - 1; i >= 0; i--) {
+            if (digits[i] + 1 != 10) {
+                digits[i] += 1;
+                return digits;
+            } else {
+                digits[i] = 0;
             }
-            if(i==-1){
-                digits.insert(digits.begin(),1);
-            }
-            return digits;
         }
+        if (i == -1) {
+            digits.insert(digits.begin(), 1);
+        }
+        return digits;
+    }
 };
 
-int main(){
-    vector<int> digits = {9,9,9,9,9,9,9,1};
+int main() {
+    vector<int> digits = {9, 9, 9, 9, 9, 9, 9, 1};
     Solution solution;
     digits = solution.plusOne(digits);
     vector<int>::iterator it;
-    for(it=digits.begin();it!=digits.end();it++){
-        cout<<*it<<endl;
+    for (it = digits.begin(); it != digits.end(); it++) {
+        cout << *it << endl;
     }
     return 0;
 }

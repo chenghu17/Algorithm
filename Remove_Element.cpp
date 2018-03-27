@@ -1,5 +1,6 @@
 //
 // Created by Mr.Hu on 25/03/2018.
+//
 // leetcode Remove Element
 // 在原vector上进行update，设置一个位置变量来记录当前多少位与给定数不相同
 // 一旦出现不相同，则与记录位进行交换，最终记录位的大小即位与给定数字不相同的上界

@@ -9,7 +9,7 @@ add_executable(Two_Sum Leetcode/Two_Sum.cpp)
 
 add_executable(Remove_Duplicates Leetcode/Remove_Duplicates.cpp)
 
-add_executable(Judge_Square Judge_Square.cpp)
+add_executable(Judge_Square InterviewQ/Judge_Square.cpp)
 
 add_executable(Reverse_Integer Leetcode/Reverse_Integer.cpp)
 

@@ -18,3 +18,5 @@ add_executable(Remove_Element Remove_Element.cpp)
 add_executable(Plus_One Plus_One.cpp)
 
 add_executable(Insert_Position Insert_Position.cpp)
+
+add_executable(Maximum_Subarray Maximum_Subarray.cpp)

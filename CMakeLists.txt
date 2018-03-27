@@ -11,6 +11,8 @@ add_executable(Remove_Duplicates Leetcode/Remove_Duplicates.cpp)
 
 add_executable(Judge_Square InterviewQ/Judge_Square.cpp)
 
+add_executable(Judge_Direction InterviewQ/Judge_Direction.cpp)
+
 add_executable(Reverse_Integer Leetcode/Reverse_Integer.cpp)
 
 add_executable(Remove_Element Leetcode/Remove_Element.cpp)

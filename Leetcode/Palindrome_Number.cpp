@@ -18,6 +18,7 @@
 //                                  so if you use a temp variable you’e still using O(1) space and it is fine."
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 class Solution {
@@ -67,13 +68,13 @@ public:
     }
 };
 
-int main(){
+int main() {
     int number = 0;
     Solution solution;
     bool result = solution.isPalindrome(number);
     bool result_criterion = solution.isPalindrome_criterion(number);
-    cout<<result<<endl;
-    cout<<result_criterion<<endl;
+    cout << result << endl;
+    cout << result_criterion << endl;
     return 0;
 
 }

@@ -13,7 +13,9 @@
 // 第二个方法借助临时变量，考虑到回文数折中后左边剩下的部分，和右边翻转得到的数字相等则为palindrome，
 // 并且这样折中后再翻转就不存在overflow的情况了，这是关键！
 //
-
+// 注：leetcode上的without extra space实际上的意思空间复杂度为O(1)；
+// explanation from stackoverflow: “without extra space” usually means with O(1) space.
+//                                  so if you use a temp variable you’e still using O(1) space and it is fine."
 #include <iostream>
 #include <vector>
 using namespace std;

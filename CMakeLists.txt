@@ -24,3 +24,5 @@ add_executable(Insert_Position Leetcode/Insert_Position.cpp)
 add_executable(Maximum_Subarray Leetcode/Maximum_Subarray.cpp)
 
 add_executable(Palindrome_Number Leetcode/Palindrome_Number.cpp)
+
+add_executable(Merge_Sorted_Array Leetcode/Merge_Sorted_Array.cpp)

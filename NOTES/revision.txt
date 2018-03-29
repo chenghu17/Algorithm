@@ -190,3 +190,22 @@
                 静态成员函数没有this指针，只能访问静态成员(变量或函数)；普通成员函数有执政，可以访问类中的任意成员。
 
 21、继承
+    基类和派生类：父类为基类、子类为派生类；与java不同，c++中一个类可以派生自多个类，即子类可以有多个父类！
+                class derived-class: access-specifier base-class
+                如：class rectangle:public shape {...}
+    访问控制和继承：派生类可以访问基类中所有的非私有成员。因此基类成员如果不想被派生类的成员函数访问，则应在基类中声明为 private
+                一个派生类继承类所有的基类方法，除了1、基类的构造函数、析构函数和拷贝构造函数；2、基类的重载运算符；3、基类的友元函数。
+    继承关系：当一个类派生自基类，该基类可以被继承为 public、protected 或 private 几种类型。
+             几乎不使用 protected 或 private 继承，通常使用 public 继承。
+             公有继承（public）：当一个类派生自公有基类时，基类的公有成员也是派生类的公有成员，基类的保护成员也是派生类的保护成员，
+                                基类的私有成员不能直接被派生类访问，但是可以通过调用基类的公有和保护成员来访问。
+             保护继承（protected）： 当一个类派生自保护基类时，基类的公有和保护成员将成为派生类的保护成员。
+             私有继承（private）：当一个类派生自私有基类时，基类的公有和保护成员将成为派生类的私有成员。
+    多继承：  多继承即一个子类可以有多个父类，它继承了多个父类的特性。
+              class rectangle: public shape, public paintcost{...}
+             注：多继承（环状继承）：
+                class D{...}; class A: public D{...}; class B: public D{...}; class C: public A, public B {...}
+                这个继承会使D创建两个对象,要解决上面问题就要用虚拟继承格式: 格式：class 类名: virtual 继承方式 父类名
+                class D{...}; class A: virtual public D{...}; class B: virtual public D{...}; class C: public A, public B {...}
+
+

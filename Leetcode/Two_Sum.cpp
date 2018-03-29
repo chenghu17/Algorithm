@@ -1,7 +1,8 @@
 //
 // Created by Mr.Hu on 21/03/2018.
-// leetcode : Two_Sum
+// leetcode1 : Two_Sum
 // 相邻两个值的和为目标结果，则输出该数对
+//
 
 #include <iostream>
 #include <vector>

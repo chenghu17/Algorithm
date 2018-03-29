@@ -208,4 +208,4 @@
                 这个继承会使D创建两个对象,要解决上面问题就要用虚拟继承格式: 格式：class 类名: virtual 继承方式 父类名
                 class D{...}; class A: virtual public D{...}; class B: virtual public D{...}; class C: public A, public B {...}
 
-
+22、重载运算符和重载函数

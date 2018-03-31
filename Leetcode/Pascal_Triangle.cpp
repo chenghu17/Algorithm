@@ -52,5 +52,4 @@ int main(){
     Solution solution;
     vector<vector<int>> result = solution.generate(numRows);
     return 0;
-
 }

@@ -1,6 +1,6 @@
 //
 // Created by Mr.Hu on 29/03/2018.
-// leetcode88 merge sorted array
+// leetcode 88 merge sorted array
 // 这题看似比较容易，其实有一些坑在里面。怎么说呢，我觉得是题目表述不明。
 // 刚开始我以为m和n分别表示nums1和nums2中element的数量，就想这个数量直接用vector.size()就可以得到，何必给出呢？
 // 第一次提交后，发现m和n中有蹊跷，原来m和n表示用于合并的各自的元素数，即nums1的前m个和num2的前n个合并！

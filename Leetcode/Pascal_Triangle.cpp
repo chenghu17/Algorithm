@@ -27,6 +27,7 @@ class Solution {
 public:
     vector<vector<int>> generate(int numRows) {
         vector<vector<int>> result;
+//        vector<int> tmp;
         for(int i=1;i<=numRows;i++){
             vector<int> tmp;
             for(int j=0;j<i;j++){
@@ -35,11 +36,11 @@ public:
                 }
                 else{
                     int sum = result[i-2][j-1]+result[i-2][j];
-                    cout<<sum<<endl;
                     tmp.push_back(sum);
                 }
             }
             result.push_back(tmp);
+//            tmp.clear();
             vector<int>().swap(tmp);
         }
         return result;

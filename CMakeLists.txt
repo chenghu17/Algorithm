@@ -26,3 +26,5 @@ add_executable(Maximum_Subarray Leetcode/Maximum_Subarray.cpp)
 add_executable(Palindrome_Number Leetcode/Palindrome_Number.cpp)
 
 add_executable(Merge_Sorted_Array Leetcode/Merge_Sorted_Array.cpp)
+
+add_executable(Pascal_Triangle Leetcode/Pascal_Triangle.cpp)

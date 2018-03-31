@@ -1,7 +1,7 @@
 //
 // Created by Mr.Hu on 28/03/2018.
 //
-// leetcode9 Palindrome Number (回文数)
+// leetcode 9 Palindrome Number (回文数)
 // determine whether an integer is a palindrome, without extra space;
 // Note negative integers are not palindromes
 // 解这道回文数判断时，首先要明确负数不属于回文数

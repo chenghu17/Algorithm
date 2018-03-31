@@ -28,3 +28,7 @@ add_executable(Palindrome_Number Leetcode/Palindrome_Number.cpp)
 add_executable(Merge_Sorted_Array Leetcode/Merge_Sorted_Array.cpp)
 
 add_executable(Pascal_Triangle Leetcode/Pascal_Triangle.cpp)
+
+add_executable(Pascal_Triangle_two Leetcode/Pascal_Triangle_two.cpp)
+
+

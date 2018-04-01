@@ -31,4 +31,6 @@ add_executable(Pascal_Triangle Leetcode/c_118_Pascal_Triangle.cpp)
 
 add_executable(Pascal_Triangle_two Leetcode/c_119_Pascal_Triangle_two.cpp)
 
+add_executable(Buy_Sell_Stock Leetcode/c_121_Buy_Sell_Stock.cpp)
+
 

@@ -1,6 +1,7 @@
 //
 // Created by Mr.Hu on 2018/4/3.
 // leetcode122 best tome to buy and sell stock two
+//
 // 题目要求求最大利益，可以买卖多次，但是当天只能买或者卖。
 // 拿到这个题目，发现并没有思路，刚开始认为是一个组合优化的问题，想到保证局部最优最后能达到全局最优，
 // 还想着能不能用图解决，但是这个是一个序列问题，所以果断放弃这种思路。
@@ -21,6 +22,10 @@
 // 具体的coding，是设定三个指针，一个为当前最低价格的prior;一个是当前的价格current；以及下一个时间的价格i；
 // 通过prior与current，current与i之间的比较，来更新指针，并更新利润。
 //
+// 突然相处了一个优化方案！！！
+// 通过思考股票做空，想到如果想要通过多次转手买卖获得最大利润，则在每个相邻时间把握住赚钱机会！
+// 所以计算相邻时间的差值，如果为正，则这次买卖为赚钱，所以值得进行
+// 对于这个题目，可以先脱离题目数据进行思考，考虑实际的股票市场情况，然后与这题联系起来，就可以得到最优解答
 
 #include <iostream>
 #include <vector>
@@ -58,13 +63,29 @@ public:
         }
         return profit;
     }
+
+
+    int maxProfit_optimal(vector<int> &prices) {
+        int profit = 0;
+        auto size = prices.size();
+        if (size < 2)
+            return profit;
+        for (int i = 0; i < size - 1; i++) {
+            int difference = prices[i + 1] - prices[i];
+            if (difference > 0)
+                profit += difference;
+        }
+        return profit;
+    }
 };
 
 int main() {
     vector<int> prices = {1, 2, 3, 4, 2, 7};
     Solution solution;
     int max_profits = solution.maxProfit(prices);
-    cout << max_profits << endl;
+    int max_profits_optimal = solution.maxProfit_optimal(prices);
+    cout << "max_profits = " << max_profits << endl;
+    cout << "max_profits_optimal = " << max_profits_optimal << endl;
     return 0;
 
 

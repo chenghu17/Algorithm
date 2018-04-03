@@ -64,12 +64,9 @@ public:
         return profit;
     }
 
-
     int maxProfit_optimal(vector<int> &prices) {
         int profit = 0;
         auto size = prices.size();
-        if (size < 2)
-            return profit;
         for (int i = 0; i < size - 1; i++) {
             int difference = prices[i + 1] - prices[i];
             if (difference > 0)

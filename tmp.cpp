@@ -11,10 +11,5 @@ int main(){
     //Book book = Book();
     Book book;
     cout<<book.number;
-    int a=0,b=3;
-    if(a==3 || b==3){
-        cout<<a<<endl;
-    }
-
     return 0;
 }

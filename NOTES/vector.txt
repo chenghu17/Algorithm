@@ -1,7 +1,8 @@
 
 // c++中vector使用积累
 
-申明 vector<type> vector_name;
+头文件 #include <vector>
+声明 vector<type> vector_name;
 添加元素 vector_name.push_back(element);
 检查是否为空 if(vector_name.empty()){ ... }
 清除数据

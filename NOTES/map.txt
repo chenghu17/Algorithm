@@ -1,0 +1,13 @@
+
+// c++中map使用积累
+
+头文件 #include <map>
+声明 map<key_type, value_type> map_name;
+插入数据
+        (1) map_name[key_num] = value_num;
+        (2) map_name.insert(pair<key_type,value_type>(key_num,value_num));
+输出数据
+        (1) for(auto iter=map_name.begin();iter!=map_name.end();iter++){
+                cout<<iter->first<<" "<<iter->second<<endl;
+            }
+

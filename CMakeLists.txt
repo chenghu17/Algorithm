@@ -37,4 +37,6 @@ add_executable(Zero_Number_N_Factorial Routine/Zero_Number_N_Factorial.cpp)
 
 add_executable(Buy_Sell_Stock_two Leetcode/c_122_Buy_Sell_Stock_two.cpp)
 
+add_executable(Two_Sum_two Leetcode/c_167_Two_Sum_Two.cpp)
+
 

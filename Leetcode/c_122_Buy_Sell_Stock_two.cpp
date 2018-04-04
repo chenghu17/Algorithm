@@ -1,6 +1,6 @@
 //
 // Created by Mr.Hu on 2018/4/3.
-// leetcode122 best tome to buy and sell stock two
+// leetcode122 best time to buy and sell stock two
 //
 // 题目要求求最大利益，可以买卖多次，但是当天只能买或者卖。
 // 拿到这个题目，发现并没有思路，刚开始认为是一个组合优化的问题，想到保证局部最优最后能达到全局最优，

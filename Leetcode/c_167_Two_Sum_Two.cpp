@@ -51,7 +51,7 @@ int main() {
     Solution solution;
     vector<int> index = solution.twoSum(numbers, target);
     vector<int>::iterator it;
-    for (it = index.begin(); it < index.end(); it++) {
+    for (it = index.begin(); it != index.end(); it++) {
         cout << *it << endl;
     }
 }

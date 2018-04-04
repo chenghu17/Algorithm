@@ -1,0 +1,25 @@
+
+// c++中vector使用积累
+
+申明 vector<type> vector_name;
+添加元素 vector_name.push_back(element);
+检查是否为空 if(vector_name.empty()){ ... }
+清除数据
+       (1)  vector<type>().swap(vector_name); //size归零且capacity归零
+       (2)  vector_name.clear();              //size归零capacity保持不变，即内存地址还在
+循环输出
+       (1) for(int i=0;i!=vector_name.size();i++){
+               cout<<vector_name[i]<<end;
+            }
+       (2) vector<type>::iterator it;
+           for(it=vector_name.begin();it<vector_name.end();it++){
+               cout<<*it<<endl;
+           }
+       (3) for(auto it=vector_name.begin();it<vector_name.end();it++){
+               cout<<*it<<endl;
+           }
+       (4) for(int i=0;i!=vector_name.size();i++){
+               cout<<vector_name.at(i)<<end;
+           }
+交换数据 vector<type> vec_name1,vec_name2;
+        vec_name1.swap(vec_name2);

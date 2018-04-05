@@ -41,4 +41,6 @@ add_executable(Two_Sum_two Leetcode/c_167_Two_Sum_Two.cpp)
 
 add_executable(Majority_Element Leetcode/c_169_Majority_Element.cpp)
 
+add_executable(Contains_Duplicate Leetcode/c_217_Contains_Duplicate.cpp)
+
 

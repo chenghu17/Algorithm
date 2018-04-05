@@ -43,4 +43,6 @@ add_executable(Majority_Element Leetcode/c_169_Majority_Element.cpp)
 
 add_executable(Contains_Duplicate Leetcode/c_217_Contains_Duplicate.cpp)
 
+add_executable(Contains_Duplicate_two Leetcode/c_219_Contains_Duplicate_two.cpp)
+
 

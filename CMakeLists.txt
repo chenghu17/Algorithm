@@ -45,4 +45,6 @@ add_executable(Contains_Duplicate Leetcode/c_217_Contains_Duplicate.cpp)
 
 add_executable(Contains_Duplicate_two Leetcode/c_219_Contains_Duplicate_two.cpp)
 
+add_executable(Move_Zeroes Leetcode/c_283_Move_Zeroes.cpp)
+
 

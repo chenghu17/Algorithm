@@ -10,6 +10,34 @@
 // 但是考虑的题目对时间和空间复杂度的要求，必然不能这么做，于是想到如果要找出missing number，
 // 则可以先把给定的数组进行排序，哪个数字不在即为所求；用空间代时间的方式，用一个数组来存储给定数组的值，
 // 由于初始化数组所有数默认为0，但是如果恰好是第一个数不存在，则无法区分是不存在还是存在，所以初始化时将第一个数字初始化为-1，或其他不为0的数
-// 然后再判断，时间复杂度O(n)。
+// 然后再判断，时间复杂度O(n)。leetcode编译器和本机编译器环境不同，本机需要动态声明数组，而leetcode可以直接用变量设置为数组空间。
 
+#include <iostream>
+#include <vector>
+using namespace std;
 
+class Solution {
+public:
+    int missingNumber(vector<int> &nums) {
+        int n = nums.size();
+        int *tmp = new int[n+1];
+        tmp[0] = -1;
+        for (int i = 0; i < n; i++) {
+            int index = nums[i];
+            tmp[index] = index;
+        }
+        for (int i = 0; i <= n; i++) {
+            if (tmp[i] == 0 && i != 0 || tmp[i] == -1)
+                return i;
+        }
+    }
+};
+
+int main(){
+    vector<int> nums = {3,0,1};
+    Solution solution;
+    int result = solution.missingNumber(nums);
+    cout<<result<<endl;
+    return 0;
+
+}

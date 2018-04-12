@@ -49,6 +49,8 @@ add_executable(Missing_Number Leetcode/c_268_Missing_Number.cpp)
 
 add_executable(Move_Zeroes Leetcode/c_283_Move_Zeroes.cpp)
 
+add_executable(Third_Maximum_Number Leetcode/c_414_Third_Maximum_Number.cpp)
+
 
 
 

@@ -24,3 +24,7 @@
            }
 交换数据 vector<type> vec_name1,vec_name2;
         vec_name1.swap(vec_name2);
+
+更新数据 如果vector中已经存在元素，则可以使用下标去update这个元素。
+        但是如果该元素不存在，不能这样去添加元素，必须使用容器vector的push_back()成员函数
+        vector<int> tmp; tmp.push_back(1); tmp[0] = 2; cout<<tmp[0]<<endl;

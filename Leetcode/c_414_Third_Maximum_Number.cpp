@@ -11,10 +11,13 @@
 // 则输出最大的数result[0]，否则输出result[2]；
 //
 // 去找来一下其他解法，发现还有一种代码看来起更少的方法，用set来存储top-3，set数据结构会自动排序，
-// 而且set会自动去重。
+// 而且set会自动去重，代码如下optional，执行速度上会稍微快一点
+// 当然还有一种经常用在海量数据挖掘中的，用最大堆来进行解决，后面学习这种数据结构继续练习
+//
 
 #include <iostream>
 #include <vector>
+#include <set>
 
 using namespace std;
 
@@ -46,6 +49,21 @@ public:
         else
             return (int) result[2];
     }
+
+    int thirdMax_optional(vector<int> &nums) {
+        set<int> result;
+        for (int i = 0; i < nums.size(); i++) {
+            result.insert(nums[i]);
+            if (result.size() > 3) {
+                result.erase(result.begin());
+            }
+        }
+        if (result.size() >= 3)
+            return *result.begin();
+        else
+            return *result.rbegin();
+    }
+
 };
 
 int main() {
@@ -53,5 +71,8 @@ int main() {
     Solution solution;
     int result = solution.thirdMax(nums);
     cout << result << endl;
+    int result_optional = solution.thirdMax_optional(nums);
+    cout << result_optional << endl;
+
     return 0;
 }

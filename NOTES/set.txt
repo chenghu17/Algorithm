@@ -1,0 +1,22 @@
+
+// c++中set使用积累
+
+set是关联式容器，是用来存储同一数据类型的数据类型，并且能从一个数据集合中取出数据，
+set中的每个元素都是唯一，系统根据元素的值自动排序(从小到大)，注意set中元素的值不能被改变，python中元组的值也不能被改变
+头文件 #include <set>
+声明 set<int> name;
+
+插入数据                          setname.insert(number);
+返回set容器的第一个元素             setname.begin()
+返回set容器的最后一个元素           setname.end()
+删除set容器中的所有的元素           setname.clear()
+判断set容器是否为空                setname.empty() 　
+返回set容器可能包含的元素最大个数    setname.max_size() 　
+返回当前set容器中的元素个数          setname.size()
+返回的值和end()相同                setname.rbegin()
+返回的值和rbegin()相同             setname.rend()
+判断某个值是否出现过                setname.count()
+⚠️ 在使用的过程中发现，以上返回的是地址执政而不是具体的值，*setname.end()才是具体的值
+
+迭代器iterator的使用方法和vector的一样
+    set<int>::iterator it; for(it=setname.begin();it!=setname.end();it++){...cout<<*it<<endl;...}

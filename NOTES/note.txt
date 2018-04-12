@@ -5,3 +5,6 @@ c++中类的初始化，不像java和python，例如Book类:
     java中       Book book1 = Book(par1,par2,par3); //
     c++中        Book book1(par1,par2,par3);//或者 Book book1 = Book(par1,par2,par3);
     pathon中     book1 = Book(par1,par2,par3) #其构造方法为def __init__(self,title,author,price):
+
+STL封装了许多复杂的数据结构算法和大量常用数据结构操作。
+    vector封装数组，list封装了链表，map和set封装了二叉树。

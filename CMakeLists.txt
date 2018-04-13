@@ -51,6 +51,8 @@ add_executable(Move_Zeroes Leetcode/c_283_Move_Zeroes.cpp)
 
 add_executable(Third_Maximum_Number Leetcode/c_414_Third_Maximum_Number.cpp)
 
+add_executable(Fine_All_Numbers_Disappeared Leetcode/c_448_Fine_All_Numbers_Missing.cpp)
+
 
 
 

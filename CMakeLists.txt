@@ -55,6 +55,8 @@ add_executable(Fine_All_Numbers_Disappeared Leetcode/c_448_Fine_All_Numbers_Miss
 
 add_executable(Max_Consecutive_Ones Leetcode/c_485_Max_Consecutive_Ones.cpp)
 
+add_executable(K_diff_Pairs Leetcode/c_532_K_diff_Pairs_in_an_Array.cpp)
+
 
 
 

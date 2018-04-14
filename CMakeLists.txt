@@ -53,6 +53,8 @@ add_executable(Third_Maximum_Number Leetcode/c_414_Third_Maximum_Number.cpp)
 
 add_executable(Fine_All_Numbers_Disappeared Leetcode/c_448_Fine_All_Numbers_Missing.cpp)
 
+add_executable(Max_Consecutive_Ones Leetcode/c_485_Max_Consecutive_Ones.cpp)
+
 
 
 

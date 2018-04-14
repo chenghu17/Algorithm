@@ -16,6 +16,9 @@
 //
 // 但是时间复杂度好像有点高...才超过了5%左右的方法
 //
+// 查别人的方法，看到了之前自己的一种想法，用set来存储所有出现的数字，然后用nums[i]+k的结果来找另外一个值，存在则有这样一个数对
+// 但是当时没有用这种方法，是因为存在k=0的情况，而set会消除掉重复的数字，别人的做法是0单独考虑，如果k为0，则找出数组中相同数字的种类。
+//
 
 #include <iostream>
 #include <vector>
@@ -44,6 +47,6 @@ int main() {
     int k = 2;
     Solution solution;
     int pairs = solution.findPairs(nums, k);
-    cout<<pairs<<endl;
+    cout << pairs << endl;
     return 0;
 }

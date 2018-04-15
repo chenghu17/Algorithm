@@ -28,3 +28,7 @@
 更新数据 如果vector中已经存在元素，则可以使用下标去update这个元素。
         但是如果该元素不存在，不能这样去添加元素，必须使用容器vector的push_back()成员函数
         vector<int> tmp; tmp.push_back(1); tmp[0] = 2; cout<<tmp[0]<<endl;
+
+排序数据 对vector<int> tmp进行排序，最简单的方式：
+        sort(tmp.begin(),tmp.end())，最终tmp会以从小到大的顺序排列；
+        sort(tmp.begin(),tmp.begin()+4)，最终tmp的前四位数会以从小到大的顺序排列，后面的数字不变。

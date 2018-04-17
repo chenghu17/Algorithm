@@ -59,6 +59,8 @@ add_executable(K_diff_Pairs Leetcode/c_532_K_diff_Pairs_in_an_Array.cpp)
 
 add_executable(Array_Partition_I Leetcode/c_561_Array_Partition_I.cpp)
 
+add_executable(Reshape_the_Matrix Leetcode/c_566_Reshape_the_Matrix.cpp)
+
 
 
 

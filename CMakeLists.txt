@@ -61,6 +61,8 @@ add_executable(Array_Partition_I Leetcode/c_561_Array_Partition_I.cpp)
 
 add_executable(Reshape_the_Matrix Leetcode/c_566_Reshape_the_Matrix.cpp)
 
+add_executable(Shortest_Unsorted_Continuous_Subarray Leetcode/c_581_Shortest_Unsorted_Continuous_Subarray.cpp)
+
 
 
 

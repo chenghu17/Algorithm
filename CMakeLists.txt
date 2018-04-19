@@ -63,6 +63,8 @@ add_executable(Reshape_the_Matrix Leetcode/c_566_Reshape_the_Matrix.cpp)
 
 add_executable(Shortest_Unsorted_Continuous_Subarray Leetcode/c_581_Shortest_Unsorted_Continuous_Subarray.cpp)
 
+add_executable(Can_Place_Flowers Leetcode/c_605_Can_Place_Flowers.cpp)
+
 
 
 

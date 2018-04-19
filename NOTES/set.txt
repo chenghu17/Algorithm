@@ -13,8 +13,7 @@ set中的每个元素都是唯一，系统根据元素的值自动排序(从小�
 判断set容器是否为空                setname.empty() 　
 返回set容器可能包含的元素最大个数    setname.max_size() 　
 返回当前set容器中的元素个数          setname.size()
-返回的值和end()相同                setname.rbegin()
-返回set反方向迭代器的第一个元素      setname.rend()
+返回set反方向迭代器的第一个元素      setname.rbegin()
 判断某个值是否出现过                setname.count()
 ⚠️ 在使用的过程中发现，以上返回的是地址执政而不是具体的值，*setname.end()才是具体的值
 特别注意set.end()这个方法，是最后一个的下一个位置，所以在使用迭代器进行遍历的时候，写it!=setname.end();
@@ -22,3 +21,13 @@ set中的每个元素都是唯一，系统根据元素的值自动排序(从小�
 
 迭代器iterator的使用方法和vector的一样
     set<int>::iterator it; for(it=setname.begin();it!=setname.end();it++){...cout<<*it<<endl;...}
+
+删除set中的最后一个元素:
+    set<int>::iterator index = setname.end();
+    int number = setname.erase(--index);
+    // 而不是 setname.erase(setname.end());
+
+获取set的最后一个元素：
+                    (1) set<int>::iterator index = setname.end();
+                        int number = *(--index);
+                    (2) int number = setname.rbegin();

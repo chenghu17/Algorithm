@@ -27,66 +27,62 @@ using namespace std;
 
 class Solution {
 public:
-    bool canPlaceFlowers(vector<int>& flowerbed, int n) {
+    bool canPlaceFlowers(vector<int> &flowerbed, int n) {
         int size = flowerbed.size();
         int nums = 0;
-        if(n==0)
+        if (n == 0)
             return true;
-        if(size==1){
-            if(flowerbed[0]==0)
+        if (size == 1) {
+            if (flowerbed[0] == 0)
                 nums = 1;
-        }
-        else if(size==2){
-            if(flowerbed[0]==0 && flowerbed[1]==0)
+        } else if (size == 2) {
+            if (flowerbed[0] == 0 && flowerbed[1] == 0)
                 nums = 1;
-        }
-        else{
-            if(flowerbed[0]==0 && flowerbed[1]==0){
+        } else {
+            if (flowerbed[0] == 0 && flowerbed[1] == 0) {
                 nums++;
             }
-            if(flowerbed[size-1]==0 && flowerbed[size-2]==0){
+            if (flowerbed[size - 1] == 0 && flowerbed[size - 2] == 0) {
                 nums++;
             }
             int count = 0;
-            bool isContinuous=false;
-            for(int i=1;i<size-1;i++){
-                if(flowerbed[i]==0){
-                    if(isContinuous){
+            bool isContinuous = false;
+            for (int i = 1; i < size - 1; i++) {
+                if (flowerbed[i] == 0) {
+                    if (isContinuous) {
                         count++;
-                    }
-                    else{
+                    } else {
                         count = 1;
                         isContinuous = true;
                     }
-                }
-                else{
+                } else {
                     isContinuous = false;
-                    int result = (count-1)/2;
-                    if(result>0){
+                    int result = (count - 1) / 2;
+                    if (result > 0) {
                         nums += result;
                     }
                     count = 0;
                 }
             }
-            if(count!=0){
-                int result = (count-1)/2;
-                if(result>0){
+            if (count != 0) {
+                int result = (count - 1) / 2;
+                if (result > 0) {
                     nums += result;
                 }
             }
         }
-        if(nums>=n) {
+        if (nums >= n) {
             return true;
         }
         return false;
     }
 };
 
-int main(){
-    vector<int> flowerbed = {1,0,0,0,0,1};
+int main() {
+    vector<int> flowerbed = {1, 0, 0, 0, 0, 1};
     int n = 1;
     Solution solution;
-    bool result = solution.canPlaceFlowers(flowerbed,n);
-    cout<<result<<endl;
+    bool result = solution.canPlaceFlowers(flowerbed, n);
+    cout << result << endl;
     return 0;
 }

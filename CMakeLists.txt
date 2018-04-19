@@ -65,6 +65,8 @@ add_executable(Shortest_Unsorted_Continuous_Subarray Leetcode/c_581_Shortest_Uns
 
 add_executable(Can_Place_Flowers Leetcode/c_605_Can_Place_Flowers.cpp)
 
+add_executable(Maximum_Product_of_Three_Numbers Leetcode/c_628_Maximum_Product_of_Three_Numbers.cpp)
+
 
 
 

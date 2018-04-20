@@ -67,6 +67,8 @@ add_executable(Can_Place_Flowers Leetcode/c_605_Can_Place_Flowers.cpp)
 
 add_executable(Maximum_Product_of_Three_Numbers Leetcode/c_628_Maximum_Product_of_Three_Numbers.cpp)
 
+add_executable(Rotate_Array Leetcode/c_189_Rotate_Array.cpp)
+
 
 
 

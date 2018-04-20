@@ -69,6 +69,8 @@ add_executable(Maximum_Product_of_Three_Numbers Leetcode/c_628_Maximum_Product_o
 
 add_executable(Rotate_Array Leetcode/c_189_Rotate_Array.cpp)
 
+add_executable(Maximum_Average_Subarray_I Leetcode/c_643_Maximum_Average_Subarray_I.cpp)
+
 
 
 

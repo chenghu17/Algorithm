@@ -71,6 +71,8 @@ add_executable(Rotate_Array Leetcode/c_189_Rotate_Array.cpp)
 
 add_executable(Maximum_Average_Subarray_I Leetcode/c_643_Maximum_Average_Subarray_I.cpp)
 
+add_executable(Image_Smoother Leetcode/c_661_Image_Smoother.cpp)
+
 
 
 

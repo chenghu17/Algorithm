@@ -73,6 +73,8 @@ add_executable(Maximum_Average_Subarray_I Leetcode/c_643_Maximum_Average_Subarra
 
 add_executable(Image_Smoother Leetcode/c_661_Image_Smoother.cpp)
 
+add_executable(Longest_Continuous_Increasing_Subsequence Leetcode/c_674_Longest_Continuous_Increasing_Subsequence.cpp)
+
 
 
 

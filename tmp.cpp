@@ -14,7 +14,7 @@ public:
 
 int main() {
 
-    int n;
+      int n;
 //    cin>>n;
 //    int m[n] = {0};
 

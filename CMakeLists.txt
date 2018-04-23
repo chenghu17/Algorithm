@@ -75,6 +75,8 @@ add_executable(Image_Smoother Leetcode/c_661_Image_Smoother.cpp)
 
 add_executable(Longest_Continuous_Increasing_Subsequence Leetcode/c_674_Longest_Continuous_Increasing_Subsequence.cpp)
 
+add_executable(Max_Area_of_Island Leetcode/c_695_Max_Area_of_Island.cpp)
+
 
 
 

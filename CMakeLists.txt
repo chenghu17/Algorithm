@@ -77,6 +77,8 @@ add_executable(Longest_Continuous_Increasing_Subsequence Leetcode/c_674_Longest_
 
 add_executable(Max_Area_of_Island Leetcode/c_695_Max_Area_of_Island.cpp)
 
+add_executable(c_697_Degree_of_an_Array Leetcode/c_697_Degree_of_an_Array.cpp)
+
 
 
 

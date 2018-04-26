@@ -81,6 +81,8 @@ add_executable(Degree_of_an_Array Leetcode/c_697_Degree_of_an_Array.cpp)
 
 add_executable(1_bit_and_2_bit_Characters Leetcode/c_717_1_bit_and_2_bit_Characters.cpp)
 
+add_executable(Find_Pivot_Index Leetcode/c_724_Find_Pivot_Index.cpp)
+
 
 
 

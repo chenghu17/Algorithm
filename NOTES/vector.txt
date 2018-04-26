@@ -38,6 +38,7 @@
         最大值的索引：auto biggest = max_element(vectorname.begin(),vectorname.end());
         最小值的索引：auto smallest = minelement(vectorname.begin(),vectorname.end());
         最大最小值即为： *biggest,*smallest
+        得到最大值的索引值： int index = distance(vectorname.begin(),biggest);
 
 初始化vector:
         一维：vector<int> a(10);

@@ -87,6 +87,8 @@ add_executable(Largest_Number_At_Least_Twice_of_others Leetcode/c_747_Largest_Nu
 
 add_executable(Non_decreasing_Array Leetcode/c_665_Non_decreasing_Array.cpp)
 
+add_executable(Toeplitz_Matrix Leetcode/c_766_Toeplitz_Matrix.cpp)
+
 
 
 

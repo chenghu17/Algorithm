@@ -89,6 +89,8 @@ add_executable(Non_decreasing_Array Leetcode/c_665_Non_decreasing_Array.cpp)
 
 add_executable(Toeplitz_Matrix Leetcode/c_766_Toeplitz_Matrix.cpp)
 
+add_executable(Min_Cost_Climbing_Stairs Leetcode/c_746_Min_Cost_Climbing_Stairs.cpp)
+
 
 
 

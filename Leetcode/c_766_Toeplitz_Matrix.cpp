@@ -46,7 +46,7 @@ public:
 
 int main() {
     vector<vector<int>> nums = {{1, 2, 3},
-                                {4, 0, 2}};
+                                {4, 1, 2}};
     Solution solution;
     bool result = solution.isToeplitzMatrix(nums);
     cout << result << endl;

@@ -85,6 +85,8 @@ add_executable(Find_Pivot_Index Leetcode/c_724_Find_Pivot_Index.cpp)
 
 add_executable(Largest_Number_At_Least_Twice_of_others Leetcode/c_747_Largest_Number_At_Least_Twice_of_Others.cpp)
 
+add_executable(Non_decreasing_Array Leetcode/c_665_Non_decreasing_Array.cpp)
+
 
 
 

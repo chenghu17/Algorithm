@@ -3,7 +3,13 @@
 //
 // leetcode 136 single number
 //
+// 题目给定非空数组，数组中除了一个元素只出现一次，其他元素都出现两次，要求找出只出现一次的元素
+// 这个题目基本就是练习使用hash table，使用map来存储元素值以及其出现的次数，最后使用迭代器来遍历map
+// mapname->secode表示元素出现的次数，mapname->first表示对应的元素值。
+// 但是这样的解题方式很慢，用了太多的封装好的数据结构以及两次遍历。
 //
+
+
 #include <iostream>
 #include <vector>
 #include <map>

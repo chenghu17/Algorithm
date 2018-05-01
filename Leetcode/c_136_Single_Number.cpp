@@ -7,6 +7,9 @@
 // 这个题目基本就是练习使用hash table，使用map来存储元素值以及其出现的次数，最后使用迭代器来遍历map
 // mapname->secode表示元素出现的次数，mapname->first表示对应的元素值。
 // 但是这样的解题方式很慢，用了太多的封装好的数据结构以及两次遍历。
+// 题目要求尽量不适用额外的空间...
+//
+// 在网上看到了另外一种optimal方法
 //
 
 
@@ -34,12 +37,23 @@ public:
             }
         }
     }
+
+    int singleNumber_optimal(vector<int>& nums) {
+        int size = nums.size();
+        int result = nums[0];
+        for(int i=1;i<size;i++){
+            result ^=nums[i];
+        }
+        return result;
+
+    }
+
 };
 
 int main(){
     vector<int> nums = {1,1,2,2,4};
     Solution solution;
-    int result = solution.singleNumber(nums);
+    int result = solution.singleNumber_optimal(nums);
     cout<<result<<endl;
     return 0;
 }

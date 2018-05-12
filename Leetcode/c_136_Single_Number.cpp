@@ -16,6 +16,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
+
 using namespace std;
 
 class Solution {
@@ -38,11 +39,11 @@ public:
         }
     }
 
-    int singleNumber_optimal(vector<int>& nums) {
+    int singleNumber_optimal(vector<int> &nums) {
         int size = nums.size();
         int result = nums[0];
-        for(int i=1;i<size;i++){
-            result ^=nums[i];
+        for (int i = 1; i < size; i++) {
+            result ^= nums[i];
         }
         return result;
 
@@ -50,10 +51,10 @@ public:
 
 };
 
-int main(){
-    vector<int> nums = {1,1,2,2,4};
+int main() {
+    vector<int> nums = {1, 1, 2, 2, 4};
     Solution solution;
     int result = solution.singleNumber_optimal(nums);
-    cout<<result<<endl;
+    cout << result << endl;
     return 0;
 }

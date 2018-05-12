@@ -93,4 +93,5 @@ add_executable(Min_Cost_Climbing_Stairs Leetcode/c_746_Min_Cost_Climbing_Stairs.
 
 add_executable(Single_Number Leetcode/c_136_Single_Number.cpp)
 
+add_executable(Happy_Number Leetcode/c_202_Happy_Number.cpp)
 

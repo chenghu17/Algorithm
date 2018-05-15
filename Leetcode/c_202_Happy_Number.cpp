@@ -51,4 +51,5 @@ int main() {
     Solution solution;
     bool isHappyNumber = solution.isHappy(n);
     cout << isHappyNumber << endl;
+    return 0;
 }

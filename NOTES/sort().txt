@@ -1,0 +1,89 @@
+
+// c++中sort()函数使用积累
+
+    sort()函数是c++一种排序方法之一，学会了这种方法也打消我学习c++以来使用的冒泡排序和选择排序所带来的执行效率不高的问题！
+    因为它使用的排序方法是类似于快排的方法，时间复杂度为n*log2(n)，执行效率较高！
+
+    c++标准库里的排序函数的使用方法
+        1、Sort函数包含在头文件为#include<algorithm>的c++标准库中，调用标准库里的排序方法可以不必知道其内部是如何实现的，只要出现我们想要的结果即可！
+        2、Sort函数有三个参数：
+            （1）第一个是要排序的数组的起始地址;
+            （2）第二个是结束的地址（最后一位要排序的地址）;
+            （3）第三个参数是排序的方法，可以是从大到小也可是从小到大，还可以不写第三个参数，此时默认的排序方法是从小到大排序。
+
+    Sort函数使用模板: Sort(start,end,排序方法)
+
+    下面就具体使用sort（）函数结合对数组里的十个数进行排序做一个说明！
+
+        例一：sort函数没有第三个参数，实现的是从小到大
+            #include<iostream>
+            #include<algorithm>
+            using namespace std;
+            int main()
+            {
+                 int a[10]={9,6,3,8,5,2,7,4,1,0};
+                 for(int i=0;i<10;i++)
+                    cout<<a[i]<<endl;
+                 sort(a,a+10);
+                 for(int i=0;i<10;i++)
+                    cout<<a[i]<<endl;
+                 return 0;
+            }
+
+        例二：通过上面的例子，会产生疑问：要实现从大到小的排序肿么办？这就如前文所说需要在sort()函数里的第三个参数里做文章了，
+                告诉程序我要从大到小排序！需要加入一个比较函数 complare(),此函数的实现过程是这样的
+            #include<iostream>
+            #include<algorithm>
+            using namespace std;
+            bool complare(int a,int b)
+            {
+                 return a>b;
+            }
+            int main()
+            {
+                 int a[10]={9,6,3,8,5,2,7,4,1,0};
+                 for(int i=0;i<10;i++)
+                    cout<<a[i]<<endl;
+                 sort(a,a+10,complare);//在这里就不需要对complare函数传入参数了，//这是规则
+                 for(int i=0;i<10;i++)
+                    cout<<a[i]<<endl;
+                 return 0;
+            }
+
+        例三：通过上面例一、二的方法虽然实现了从大到小和从大到小的排序，这样做还是有点麻烦，因为还需要
+                自己编写告诉程序执行何种排序的原则的函数，c++标准库强大的功能完全可以解决这种麻烦。
+
+            Sort函数的第三个参数可以用这样的语句告诉程序你所采用的排序原则
+                less<数据类型>()//从小到大排序
+                greater<数据类型>()//从大到小排序
+            结合本例子，这样的就可以完成你想要的任何一种排序原则了
+            #include<iostream>
+            #include<algorithm>
+            using namespace std;
+            int main()
+            {
+                 int a[10]={9,6,3,8,5,2,7,4,1,0};
+                 for(int i=0;i<10;i++)
+                    cout<<a[i]<<endl;
+                 sort(a,a+10,less<int>());
+                 // sort(a,a+10,greater<int>());
+                 for(int i=0;i<10;i++)
+                    cout<<a[i]<<endl;
+                 return 0;
+            }
+
+        例四：利用sort函数还可以实现对字符的排序，排序方法大同小异，下面就把程序范例展示一下
+            #include<iostream>
+            #include<algorithm>
+            using namespace std;
+            int main()
+            {
+                 char a[11]="asdfghjklk";
+                 for(int i=0;i<10;i++)
+                    cout<<a[i]<<endl;
+                 sort(a,a+10,greater<char>());
+                 for(int i=0;i<10;i++)
+                    cout<<a[i]<<endl;
+                 return 0;
+            }
+    注：内容摘自 https://blog.csdn.net/liuzuyi200/article/details/8974326

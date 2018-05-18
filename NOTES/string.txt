@@ -1,0 +1,20 @@
+
+// c++中string类使用积累
+
+    string的特性描述:
+        int capacity()const;    //返回当前容量（即string中不必增加内存即可存放的元素个数）
+        int max_size()const;    //返回string对象中可存放的最大字符串的长度
+        int size()const;        //返回当前字符串的大小
+        int length()const;       //返回当前字符串的长度
+        bool empty()const;        //当前字符串是否为空
+        void resize(int len,char c);//把字符串当前大小置为len，并用字符c填充不足的部分
+
+    string类的字符操作：
+        const char &operator[](int n)const;
+        const char &at(int n)const;
+        char &operator[](int n);
+        char &at(int n);
+        operator[]和at()均返回当前字符串中第n个字符的位置，但at函数提供范围检查，当越界时会抛出out_of_range异常，下标运算符[]不提供检查访问。
+        const char *data()const;//返回一个非null终止的c字符数组
+        const char *c_str()const;//返回一个以null终止的c字符串
+        int copy(char *s, int n, int pos = 0) const;//把当前串中以pos开始的n个字符拷贝到以s为起始位置的字符数组中，返回实际拷贝的数目

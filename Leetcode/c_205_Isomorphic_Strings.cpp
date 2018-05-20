@@ -15,10 +15,17 @@
 // 所以我又加了一个set来分别存储s和t中出现的字符，要满足同构，s和t中出现的字符种类数还必须相等。
 // 但是使用了这么多数据结构，程序最终的执行效率比较低，只超过了百分之十五的accepted结果。
 //
+// 在官网上查看了别人提交的代码，行数少，而且执行效率高；
+// 那个256应该是ASCII的范围
+// 对于s和t上同一位置的字符分别计数，他们各自的出现个数应该是相同的，所以这样就能保证对应
+// 而不是前者作为后者的判断或者后者作为前者的判断。
+// 这种方法值得多思考。
+//
 
 #include <iostream>
 #include <set>
 #include <map>
+
 using namespace std;
 
 class Solution {
@@ -42,12 +49,22 @@ public:
         }
         return tmp_s.size() == tmp_t.size();
     }
+
+    bool isIsomorphic_optimal(string s, string t) {
+        int m1[256] = {0}, m2[256] = {0}, n = s.size();
+        for (int i = 0; i < n; ++i) {
+            if (m1[s[i]] != m2[t[i]]) return false;
+            m1[s[i]] = i + 1;
+            m2[t[i]] = i + 1;
+        }
+        return true;
+    }
 };
 
-int main(){
+int main() {
     string s = "title";
     string t = "paper";
     Solution solution;
-    bool result = solution.isIsomorphic(s,t);
-    cout<<result<<endl;
+    bool result = solution.isIsomorphic_optimal(s, t);
+    cout << result << endl;
 }

@@ -99,3 +99,5 @@ add_executable(Count_Primes Leetcode/c_204_Count_Primes.cpp)
 
 add_executable(Valid_Anagram Leetcode/c_242_Valid_Anagram.cpp)
 
+add_executable(Isomorphc_Strings Leetcode/c_205_Isomorphic_Strings.cpp)
+

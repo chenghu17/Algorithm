@@ -10,4 +10,9 @@
         (1) for(auto iter=map_name.begin();iter!=map_name.end();iter++){
                 cout<<iter->first<<" "<<iter->second<<endl;
             }
-
+初始化：
+        map<char,char> tmp;
+        // default value is NULL
+        if(tmp['a'] == NULL){
+            // do something
+        }

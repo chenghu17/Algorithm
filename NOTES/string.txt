@@ -18,3 +18,6 @@
         const char *data()const;//返回一个非null终止的c字符数组
         const char *c_str()const;//返回一个以null终止的c字符串
         int copy(char *s, int n, int pos = 0) const;//把当前串中以pos开始的n个字符拷贝到以s为起始位置的字符数组中，返回实际拷贝的数目
+
+    string转换为int： stoi(tmp);
+    char转换为int: int(tmp[3]-'0');

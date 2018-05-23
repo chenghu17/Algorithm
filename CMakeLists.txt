@@ -103,3 +103,5 @@ add_executable(Isomorphc_Strings Leetcode/c_205_Isomorphic_Strings.cpp)
 
 add_executable(Intersection_of_Two_Arrays Leetcode/c_349_Intersection_of_Two_Arrays.cpp)
 
+add_executable(Count_and_Say Leetcode/b_38_Count_and_Say.cpp)
+

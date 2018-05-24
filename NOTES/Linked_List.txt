@@ -1,0 +1,23 @@
+
+
+//c++中链表使用积累
+
+    单链表构建：
+        先设置单个节点的抽象（结构体）：
+            struct ListNode {
+                int val;
+                ListNode *next;
+                // 构造函数
+                // ListNode(int x) : val(x), next(NULL) {}
+                // nullptr c++11 中的空指针常量
+                ListNode(int x) : val(x), next(nullptr) {}
+            };
+        然后创建每个节点：
+            ListNode one = ListNode(1);
+            ListNode two = ListNode(1);
+            ListNode three = ListNode(1);
+            ListNode four = ListNode(2);
+        再将每个节点依次链接起来：
+            one.next = &two;
+            two.next = &three;
+            three.next = &four;

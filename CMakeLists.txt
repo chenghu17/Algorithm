@@ -105,3 +105,5 @@ add_executable(Intersection_of_Two_Arrays Leetcode/c_349_Intersection_of_Two_Arr
 
 add_executable(Count_and_Say Leetcode/b_38_Count_and_Say.cpp)
 
+add_executable(Remove_Duplicated_From_Sorted_List Leetcode/b_83_Remove_Duplicates_From_Sorted_List.cpp)
+

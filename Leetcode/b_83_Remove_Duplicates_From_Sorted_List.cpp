@@ -26,6 +26,7 @@ using namespace std;
 struct ListNode {
     int val;
     ListNode *next;
+
     // 构造函数
     ListNode(int x) : val(x), next(nullptr) {}
 };
@@ -71,4 +72,30 @@ int main() {
     }
     return 0;
 }
+
+//python代码再进行一次，已经通过leetcode测试
+//# Definition for singly-linked list.
+//# class ListNode:
+//#     def __init__(self, x):
+//#         self.val = x
+//#         self.next = None
+//
+//class Solution:
+//        def deleteDuplicates(self, head):
+//"""
+//:type head: ListNode
+//        :rtype: ListNode
+//"""
+//if head == None:
+//return head
+//        current = head
+//next = current.next
+//while next != None:
+//if current.val == next.val:
+//        current.next = next.next
+//else:
+//current = next
+//next = current.next
+//return head
+
 

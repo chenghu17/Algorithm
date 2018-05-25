@@ -107,3 +107,5 @@ add_executable(Count_and_Say Leetcode/b_38_Count_and_Say.cpp)
 
 add_executable(Remove_Duplicated_From_Sorted_List Leetcode/b_83_Remove_Duplicates_From_Sorted_List.cpp)
 
+add_executable(Add_Binary Leetcode/b_67_Add_Binary.cpp)
+

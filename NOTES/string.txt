@@ -21,3 +21,6 @@
 
     string转换为int： stoi(tmp);
     char转换为int: int(tmp[3]-'0');
+
+    string字符串拼接：stringA + stringB;
+    根据位置取子串：stringA.substr(int begin, int num); //begin为开始位置，num为字符串长度

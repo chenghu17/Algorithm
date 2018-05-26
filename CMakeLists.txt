@@ -109,3 +109,5 @@ add_executable(Remove_Duplicated_From_Sorted_List Leetcode/b_83_Remove_Duplicate
 
 add_executable(Add_Binary Leetcode/b_67_Add_Binary.cpp)
 
+add_executable(Buy_with_Which_method Routine/Buy_with_Which_method.cpp)
+

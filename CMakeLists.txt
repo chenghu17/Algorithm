@@ -111,3 +111,7 @@ add_executable(Add_Binary Leetcode/b_67_Add_Binary.cpp)
 
 add_executable(Buy_with_Which_method Routine/Buy_with_Which_method.cpp)
 
+add_executable(Buy_with_Coke Routine/Buy_with_Coke.cpp)
+
+add_executable(Intersection_of_Two_Arrays_2 Leetcode/c_350_Intersection_of_Two_Arrays_2.cpp)
+

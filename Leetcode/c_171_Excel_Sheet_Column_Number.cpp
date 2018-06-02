@@ -33,26 +33,23 @@ public:
         return result;
     }
 
-        int titleToNumber_two(string s) {
-            int length = s.size();
-            int result = 0;
-            // for(int i=0;i<length;i++){
-            //     int tmp = int(s[i]-'\0')-64;
-            //     result += tmp * pow(26,(length-i-1));
-            // }
-            for(int i=0;i<length;i++){
-                int tmp = s[i]-'\0'-64;
-                result = result*26+tmp;
-            }
-
-            return result;
+    int titleToNumber_two(string s) {
+        int length = s.size();
+        int result = 0;
+        for (int i = 0; i < length; i++) {
+            int tmp = s[i] - '\0' - 64;
+            result = result * 26 + tmp;
         }
+
+        return result;
+    }
 };
 
 int main() {
     string s = "ABCD";
     Solution solution;
     int result = solution.titleToNumber(s);
-    cout << result << endl;
+    int result_2 = solution.titleToNumber_two(s);
+    cout << result << endl << result_2 << endl;
     return 0;
 }

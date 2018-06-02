@@ -13,6 +13,8 @@
 //
 // 找出了进制关系，并得到了每个字母在excel中对应数字的提取办法，剩下的就是对每个字母进行遍历，乘以进制关系，然后累加。
 //
+// 下面给出了两种方法，一种是对每个数字分别算进制关系，第二种是每增加一位，则在增加前先乘上进制关系再累加。
+//
 
 #include <iostream>
 #include <cmath>
@@ -30,6 +32,21 @@ public:
         }
         return result;
     }
+
+        int titleToNumber_two(string s) {
+            int length = s.size();
+            int result = 0;
+            // for(int i=0;i<length;i++){
+            //     int tmp = int(s[i]-'\0')-64;
+            //     result += tmp * pow(26,(length-i-1));
+            // }
+            for(int i=0;i<length;i++){
+                int tmp = s[i]-'\0'-64;
+                result = result*26+tmp;
+            }
+
+            return result;
+        }
 };
 
 int main() {

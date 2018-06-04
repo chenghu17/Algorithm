@@ -22,9 +22,7 @@ public:
     int findMaxConsecutiveOnes(vector<int> &nums) {
         int size = nums.size();
         int max = INT_MIN;
-//        int max = 0;
         int result = 0;
-        // bool isConsecutive = true;
         for (int i = 0; i < size; i++) {
             if (nums[i] == 1) {
                 result++;

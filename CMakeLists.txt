@@ -122,3 +122,5 @@ add_executable(Reverse_Linked_List Leetcode/c_206_Reverse_Linked_List.cpp)
 add_executable(Excel_Sheet_Column_Number Leetcode/c_171_Excel_Sheet_Column_Number.cpp)
 
 add_executable(Power_of_Two Leetcode/c_231_Power_of_Two.cpp)
+
+add_executable(Factorial_Trailing_Zeroes Leetcode/c_172_Factorial_Trailing_Zeroes.cpp)

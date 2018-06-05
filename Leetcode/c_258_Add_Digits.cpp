@@ -10,7 +10,10 @@
 //
 // 第二种方法复杂度为O(1)，使用的是同余定理
 //
-
+// 第三种方法的执行效率比我写的第一种要高，它将数字转换为string，然后直接按位取值进行操作，
+// 最后将string转换为int则考虑使用ASCII码
+// 0的ASCII码位48，A的ASCII码位65，a的ASCII码位97
+//
 
 #include <iostream>
 using namespace std;
@@ -32,6 +35,18 @@ public:
 
     int addDigits_optimal(int num) {
         return 1 + (num - 1) % 9;
+    }
+
+    int addDigits_three(int num) {
+        string n = to_string(num);
+        while(n.length()>1){
+            int result = 0;
+            for(int i=0;i<n.length();i++){
+                result += (n[i]-48);
+            }
+            n = to_string(result);
+        }
+        return n[0]-48;
     }
 };
 

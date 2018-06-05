@@ -126,3 +126,5 @@ add_executable(Power_of_Two Leetcode/c_231_Power_of_Two.cpp)
 add_executable(Factorial_Trailing_Zeroes Leetcode/c_172_Factorial_Trailing_Zeroes.cpp)
 
 add_executable(Power_of_Three Leetcode/c_326_Power_of_Three.cpp)
+
+add_executable(Add_Digits Leetcode/c_258_Add_Digits.cpp)

@@ -128,3 +128,5 @@ add_executable(Factorial_Trailing_Zeroes Leetcode/c_172_Factorial_Trailing_Zeroe
 add_executable(Power_of_Three Leetcode/c_326_Power_of_Three.cpp)
 
 add_executable(Add_Digits Leetcode/c_258_Add_Digits.cpp)
+
+add_executable(First_Unique_Character_in_a_String Leetcode/c_387_First_Unique_Character_in_a_String.cpp)

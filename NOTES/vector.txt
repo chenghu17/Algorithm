@@ -46,3 +46,12 @@
         用向量a来初始化向量b: vector<int> b(a);
             注：这样初始化后，a和b指向的不是同一个数组，属于深拷贝。
         从向量a中拿第0个到第2个(总共3个)作为b的初始化值: vector<int> b(a.begin(),a.begin()+3);
+
+vector<pair<int,int>>的用法：
+        pair<int, int> a(0, 0);
+        pair<int, int> b(1, 0);
+        pair<int, int> c(2, 0);
+        vector<pair<int, int>> points;
+        points.push_back(a);
+        points.push_back(b);
+        points.push_back(c);

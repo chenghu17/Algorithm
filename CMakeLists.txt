@@ -140,3 +140,5 @@ add_executable(Find_All_Anagrams_in_a_String Leetcode/c_438_Find_All_Anagrams_in
 add_executable(Number_of_Boomerangs Leetcode/c_447_Number_of_Boomerangs.cpp)
 
 add_executable(Island_Perimeter Leetcode/c_463_Island_Perimeter.cpp)
+
+add_executable(Keyboard_Row Leetcode/c_500_Keyboard_Row.cpp)

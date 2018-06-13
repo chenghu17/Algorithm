@@ -142,3 +142,5 @@ add_executable(Number_of_Boomerangs Leetcode/c_447_Number_of_Boomerangs.cpp)
 add_executable(Island_Perimeter Leetcode/c_463_Island_Perimeter.cpp)
 
 add_executable(Keyboard_Row Leetcode/c_500_Keyboard_Row.cpp)
+
+add_executable(Distribute_Candies Leetcode/c_575_Distribute_Candies)

@@ -34,3 +34,6 @@ set中的每个元素都是唯一，系统根据元素的值自动排序(从小�
 
 set为无序不重复元素集合
     这里的无序指的是set不会记录元素的插入点和位置，即set不能使用index来获取值操作，只能使用迭代器获取值。
+
+set对vector进行去重操作：
+    set<int> s_name(vec_name.begin(), vec_name.end());

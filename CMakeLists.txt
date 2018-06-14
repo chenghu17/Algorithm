@@ -150,3 +150,5 @@ add_executable(Linked_List_Cycle Leetcode/c_141_Linked_List_Cycle)
 add_executable(Find_Top_k_duplication InterviewQ/Find_Top_k_duplication)
 
 add_executable(Delete_Node_in_a_Linked_List Leetcode/c_237_Delete_Node_in_a_Linked_List)
+
+add_executable(Remove_Linked_List_Elements Leetcode/c_203_Remove_Linked_List_Elements.cpp)

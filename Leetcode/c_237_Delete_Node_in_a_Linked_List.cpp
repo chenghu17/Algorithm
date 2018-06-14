@@ -8,7 +8,7 @@
 // 因为经过上一步操作，node->next已经是其原来的next->next，所以我们在刚开始使用auto next来保存这个位置
 // 最后直接delete这个ListNode next单独的节点就行。
 //
-// 这种手动delete，即清理内存的方式是一种很好的习惯。
+// delete似乎会报错，将这个指针赋值为nullptr吧
 //
 
 #include<iostream>
@@ -27,7 +27,8 @@ public:
         node->val = next->val;
         node->next = next->next;
         // *node = *next;
-        delete next;
+//        delete next;
+        next = nullptr;
     }
 };
 

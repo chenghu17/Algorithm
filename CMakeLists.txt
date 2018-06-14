@@ -148,3 +148,5 @@ add_executable(Distribute_Candies Leetcode/c_575_Distribute_Candies)
 add_executable(Linked_List_Cycle Leetcode/c_141_Linked_List_Cycle)
 
 add_executable(Find_Top_k_duplication InterviewQ/Find_Top_k_duplication)
+
+add_executable(Delete_Node_in_a_Linked_List Leetcode/c_237_Delete_Node_in_a_Linked_List)

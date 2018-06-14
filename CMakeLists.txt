@@ -144,3 +144,5 @@ add_executable(Island_Perimeter Leetcode/c_463_Island_Perimeter.cpp)
 add_executable(Keyboard_Row Leetcode/c_500_Keyboard_Row.cpp)
 
 add_executable(Distribute_Candies Leetcode/c_575_Distribute_Candies)
+
+add_executable(Linked_List_Cycle Leetcode/c_141_Linked_List_Cycle)

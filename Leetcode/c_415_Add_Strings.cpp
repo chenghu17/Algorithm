@@ -14,6 +14,8 @@
 // 之前的加法可能存在进位。再剩下的部分遍历完之后，最后还需要判断是否存在进位，存在则需要在最终的结果前面加上1，最后输出结果。
 // 但是这种方法的执行效率似乎不高，只超过百分之二十几的accepted solution
 //
+// 第二种方法的代码更简洁，将我上述的操作放在一个for循环中全部执行，每次两个string是否遍历完，同时是否还存在进位项，只要满足一个，
+// 就进入for循环中。这种代码结构的执行时间也只超过了百分之二十八的accepted solution
 //
 
 #include <iostream>
@@ -63,13 +65,27 @@ public:
         }
         return result;
     }
+
+    string addStrings_concise(string num1, string num2) {
+        int tmp = 0;
+        int first, second;
+        string result = "";
+        for (int i = num1.length(), j = num2.length(); i > 0 || j > 0 || tmp > 0;) {
+            first = i > 0 ? num1[--i] - '0' : 0;
+            second = j > 0 ? num2[--j] - '0' : 0;
+            result = to_string((first + second + tmp) % 10) + result;
+            tmp = (first + second + tmp) / 10;
+        }
+        return result;
+    }
+
 };
 
-int main(){
+int main() {
     string num1 = "123456";
     string num2 = "3548276494";
     Solution solution;
-    string result = solution.addStrings(num1,num2);
-    cout<<result<<endl;
+    string result = solution.addStrings(num1, num2);
+    cout << result << endl;
     return 0;
 }

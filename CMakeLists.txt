@@ -154,3 +154,5 @@ add_executable(Delete_Node_in_a_Linked_List Leetcode/c_237_Delete_Node_in_a_Link
 add_executable(Remove_Linked_List_Elements Leetcode/c_203_Remove_Linked_List_Elements.cpp)
 
 add_executable(Add_Strings Leetcode/c_415_Add_Strings.cpp)
+
+add_executable(Ugly_Number Leetcode/c_263_Ugly_Number.cpp)

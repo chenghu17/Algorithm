@@ -160,3 +160,5 @@ add_executable(Ugly_Number Leetcode/c_263_Ugly_Number.cpp)
 add_executable(Intersection_of_Two_Linked_Lists Leetcode/c_160_Intersection_of_Two_Linked_Lists)
 
 add_executable(Arranging_Coins Leetcode/c_441_Arranging_Coins)
+
+add_executable(Perfect_Number Leetcode/c_507_Perfect_Number)

@@ -13,8 +13,13 @@
 // 但是这种做法一是要求b中只有交叉node的val值与a相等，其他节点不存在这种情况；另外就是b中的node的val值要与map中的value进行对比，是一个很复杂的过程；
 // 所以我就去看了官方的solution，也是提出可以使用hash set的方式，原来hash set的key可以存储指针...
 // 因此我就采用这种方式，定义map<ListNode* , int> tmp来存储a中的所有节点，value值定义为1，再对b进行遍历，判断b中node是否为map中的key值，
-// 即tmp[listnode]!=0即可
-// 但是这种方式的runtime值击败来百分之十二左右的accepted solution
+// 即tmp[listnode]!=0即可，该方法的时间复杂度为O(m+n)，空间复杂度为O(m)或O(n)。
+// 但是这种方式的runtime值击败来百分之十二左右的accepted solution。
+//
+// 当时也想了另外一种想法，也是single linked list中经常遇到的一种方法 two pointers。
+// 这种方法也是官方给出的第三种方法：同时对链表A和B遍历，步长都为1，当A到达end时，重定向到headB继续遍历，
+// 同理，当B达到end时，重定向到headA继续遍历，最后即为intersection node，但是这种方法我还没有理解...
+// 等理解了再写出来
 //
 
 #include <iostream>

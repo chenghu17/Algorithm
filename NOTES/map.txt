@@ -16,3 +16,6 @@
         if(tmp['a'] == NULL){
             // do something
         }
+
+多样化:
+        map<ListNode*,int> tmp; //使用这种数据格式来存储linked list中的每个节点

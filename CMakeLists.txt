@@ -162,3 +162,5 @@ add_executable(Intersection_of_Two_Linked_Lists Leetcode/c_160_Intersection_of_T
 add_executable(Arranging_Coins Leetcode/c_441_Arranging_Coins)
 
 add_executable(Perfect_Number Leetcode/c_507_Perfect_Number)
+
+add_executable(Longest_Common_Prefix Leetcode/b_14_Longest_Common_Prefix)

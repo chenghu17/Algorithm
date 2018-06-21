@@ -168,3 +168,5 @@ add_executable(Longest_Common_Prefix Leetcode/b_14_Longest_Common_Prefix)
 add_executable(Reverse_Vowels_of_a_String Leetcode/c_345_Reverse_Vowels_of_a_String)
 
 add_executable(Ransom_Note Leetcode/c_383_Ransom_Note)
+
+add_executable(Length_of_Last_Word Leetcode/b_58_Length_of_Last_word)

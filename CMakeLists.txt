@@ -170,3 +170,5 @@ add_executable(Reverse_Vowels_of_a_String Leetcode/c_345_Reverse_Vowels_of_a_Str
 add_executable(Ransom_Note Leetcode/c_383_Ransom_Note)
 
 add_executable(Length_of_Last_Word Leetcode/b_58_Length_of_Last_word)
+
+add_executable(Number_of_Segments_in_a_String Leetcode/c_434_Number_of_Segments_in_a_String.cpp)

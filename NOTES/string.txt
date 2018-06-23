@@ -24,3 +24,7 @@
 
     string字符串拼接：stringA + stringB;
     根据位置取子串：stringA.substr(int begin, int num); //begin为开始位置，num为字符串长度
+
+    string判断子串：
+                stringname.find(substring) == string::npos? true则不为子串；false则为子串。
+                还可以传入int n来规定匹配子串的前n位

@@ -180,3 +180,5 @@ add_executable(String_Compression Leetcode/c_443_String_Compression.cpp)
 add_executable(Valid_Palindrome_II Leetcode/c_680_Valid_Palindrome_II.cpp)
 
 add_executable(Reverse_String_II Leetcode/c_541_Reverse_String_II.cpp)
+
+add_executable(Repeated_String_Match Leetcode/c_686_Repeated_String_Match.cpp)

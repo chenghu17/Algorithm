@@ -22,7 +22,7 @@ using namespace std;
 
 class Solution {
 public:
-    string reverse(string s, int k) {
+    string reverse_module(string s, int k) {
         string result;
         int m = s.size();
         if (m <= k) {
@@ -44,26 +44,33 @@ public:
         string result;
         while (length > 0) {
             if (length / 2 * k > 0) {
-                result += reverse(s.substr(count * 2 * k, 2 * k), k);
+                result += reverse_module(s.substr(count * 2 * k, 2 * k), k);
                 length -= 2 * k;
                 ++count;
             } else if (length / k > 0) {
-                result += reverse(s.substr(count * 2 * k, length), k);
+                result += reverse_module(s.substr(count * 2 * k, length), k);
                 length = 0;
             } else {
-                result += reverse(s.substr(count * 2 * k, length), k);
+                result += reverse_module(s.substr(count * 2 * k, length), k);
                 length = 0;
             }
         }
         return result;
     }
+
+    string reverseStr_optimal(string s, int k) {
+        for (int i = 0; i < s.size(); i += 2 * k) {
+            reverse(&s[i], &s[min(int(s.size()), i + k)]);
+        }
+        return s;
+    }
 };
 
-int main(){
+int main() {
     string s = "abcdefghijk";
     Solution solution;
-    string result = solution.reverseStr(s,2);
-    cout<<result<<endl;
-    cout<<min(2,3);
+//    string result = solution.reverseStr(s,2);
+    string result = solution.reverseStr_optimal(s, 2);
+    cout << result << endl;
     return 0;
 }

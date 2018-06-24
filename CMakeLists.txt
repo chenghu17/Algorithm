@@ -184,3 +184,5 @@ add_executable(Reverse_String_II Leetcode/c_541_Reverse_String_II.cpp)
 add_executable(Repeated_String_Match Leetcode/c_686_Repeated_String_Match.cpp)
 
 add_executable(Valid_Perfect_Square Leetcode/c_367_Valid_Perfect_Square.cpp)
+
+add_executable(Guess_Number_Higher_or_Lower Leetcode/c_374_Guess_Number_Higher_or_Lower)

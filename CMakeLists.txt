@@ -190,3 +190,5 @@ add_executable(Guess_Number_Higher_or_Lower Leetcode/c_374_Guess_Number_Higher_o
 add_executable(Find_Smallest_Letter_Greater_Than_Target Leetcode/c_744_Find_Smallest_Letter_Greater_Than_Target)
 
 add_executable(Student_Attendance_Record_I Leetcode/c_551_Student_Attendance_Record_I)
+
+add_executable(Sqrt_x Leetcode/b_69_Sqrt_x)

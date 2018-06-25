@@ -192,3 +192,5 @@ add_executable(Find_Smallest_Letter_Greater_Than_Target Leetcode/c_744_Find_Smal
 add_executable(Student_Attendance_Record_I Leetcode/c_551_Student_Attendance_Record_I)
 
 add_executable(Sqrt_x Leetcode/b_69_Sqrt_x)
+
+add_executable(Peak_Index_in_a_Mountain Leetcode/c_852_Peak_Index_in_a_Mountain.cpp)

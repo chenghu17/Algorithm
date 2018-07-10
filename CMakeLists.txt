@@ -198,3 +198,5 @@ add_executable(Peak_Index_in_a_Mountain Leetcode/c_852_Peak_Index_in_a_Mountain.
 add_executable(Kth_Largest_Element_in_an_Array Leetcode/c_215_Kth_Largest_Element_in_an_Array)
 
 add_executable(Positions_of_Large_Groups Leetcode/c_830_Positions_of_Large_Groups)
+
+add_executable(Go_up_the_stairs InterviewQ/Go_up_the_stairs.cpp)

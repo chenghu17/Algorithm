@@ -53,7 +53,11 @@ int main() {
     cout << "please enter the number of stairs: ";
     int stairs_num;
     cin >> stairs_num;
-    string method_count = StepUp(stairs_num);
-    cout << "the sum of methods: " << method_count;
+    if (stairs_num < 0) {
+        cout << "The number of stairs cannot be less than 0";
+    } else {
+        string method_count = StepUp(stairs_num);
+        cout << "the sum of methods: " << method_count;
+    }
     return 0;
 }

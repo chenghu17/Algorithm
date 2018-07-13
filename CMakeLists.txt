@@ -200,3 +200,5 @@ add_executable(Kth_Largest_Element_in_an_Array Leetcode/c_215_Kth_Largest_Elemen
 add_executable(Positions_of_Large_Groups Leetcode/c_830_Positions_of_Large_Groups)
 
 add_executable(Go_up_the_stairs InterviewQ/Go_Up_the_Stairs.cpp)
+
+add_executable(Valid_Parentheses Leetcode/b_20_Valid_Parentheses.cpp)

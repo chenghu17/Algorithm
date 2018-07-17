@@ -202,3 +202,5 @@ add_executable(Positions_of_Large_Groups Leetcode/c_830_Positions_of_Large_Group
 add_executable(Go_up_the_stairs InterviewQ/Go_Up_the_Stairs.cpp)
 
 add_executable(Valid_Parentheses Leetcode/b_20_Valid_Parentheses.cpp)
+
+add_executable(Valid_Palindrome Leetcode/c_125_Valid_Palindrome)

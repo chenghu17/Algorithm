@@ -206,3 +206,5 @@ add_executable(Valid_Parentheses Leetcode/b_20_Valid_Parentheses.cpp)
 add_executable(Valid_Palindrome Leetcode/c_125_Valid_Palindrome)
 
 add_executable(Min_Stack Leetcode/c_155_Min_Stack)
+
+add_executable(Implement_Stack_using_Queues Leetcode/c_225_Implement_Stack_using_Queues.cpp)

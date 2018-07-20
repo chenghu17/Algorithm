@@ -6,3 +6,7 @@
     然后改变自己的状态，并返回这个临时对象，
     而前加的实现方式时，直接改变自己的内部状态，并返回自己的引用。
     以后尽量用前加
+
+在binary search中：
+    计算middle时，一般我们写成 middle = (right + left)/2，但是这种方式在right和left都比较大的时候，会超过int范围，
+    改写成 middle = left + (right - left)/2，采用减法就可以避免这种问题的出现。

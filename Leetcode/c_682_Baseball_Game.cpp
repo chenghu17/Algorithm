@@ -8,29 +8,30 @@
 #include <iostream>
 #include <vector>
 #include <stack>
+
 using namespace std;
 
 class Solution {
 public:
-    int calPoints(vector <string> &ops) {
+    int calPoints(vector<string> &ops) {
         stack<int> points;
         stack<int> sum_points;
         int last_point, last_last_point;
-        for (int i = 0; i < ops.size(); ++i) {
-            if (ops[i] == "C") {
+        for (auto val:ops) {
+            if (val == "C") {
                 sum_points.pop();
                 points.pop();
                 continue;
-            } else if (ops[i] == "D") {
+            } else if (val == "D") {
                 points.push(points.top() * 2);
-            } else if (ops[i] == "+") {
+            } else if (val == "+") {
                 last_point = points.top();
                 points.pop();
                 last_last_point = points.top();
                 points.push(last_point);
                 points.push(last_point + last_last_point);
             } else {
-                points.push(stoi(ops[i]));
+                points.push(stoi(val));
                 if (sum_points.empty()) {
                     sum_points.push(points.top());
                     continue;
@@ -42,7 +43,7 @@ public:
     }
 };
 
-int main(){
+int main() {
     vector<string> ops;
     ops.emplace_back("5");
     ops.emplace_back("2");
@@ -51,6 +52,6 @@ int main(){
     ops.emplace_back("+");
     Solution solution;
     int result = solution.calPoints(ops);
-    cout<<result;
+    cout << result;
     return 0;
 }

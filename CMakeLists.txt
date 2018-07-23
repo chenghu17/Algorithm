@@ -216,3 +216,7 @@ add_executable(Binary_Search Leetcode/c_704_Binary_Search)
 add_executable(Wiggle_Sort_II Leetcode/c_324_Wiggle_Sort_II)
 
 add_executable(Baseball_Game Leetcode/c_682_Baseball_Game.cpp)
+
+add_executable(reverse_single_linked_list Routine/reverse_single_linked_list)
+
+add_executable(Palindrome_Linked_List Leetcode/c_234_Palindrome_Linked_List)

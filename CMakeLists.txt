@@ -214,3 +214,5 @@ add_executable(First_Bad_Version Leetcode/c_278_First_Bad_Version)
 add_executable(Binary_Search Leetcode/c_704_Binary_Search)
 
 add_executable(Wiggle_Sort_II Leetcode/c_324_Wiggle_Sort_II)
+
+add_executable(Baseball_Game Leetcode/c_682_Baseball_Game.cpp)

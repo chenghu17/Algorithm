@@ -224,3 +224,5 @@ add_executable(Palindrome_Linked_List Leetcode/c_234_Palindrome_Linked_List)
 add_executable(Excel_Sheet_Column_Title Leetcode/c_168_Excel_Sheet_Column_Title)
 
 add_executable(Rectangle_Overlap Leetcode/c_836_Rectangle_Overlap)
+
+add_executable(Longest_Harmonious_Subsequence Leetcode/c_594_Longest_Harmonious_Subsequence)

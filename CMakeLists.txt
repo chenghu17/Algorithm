@@ -230,3 +230,5 @@ add_executable(Longest_Harmonious_Subsequence Leetcode/c_594_Longest_Harmonious_
 add_executable(Sum_of_Square_Numbers Leetcode/c_633_Sum_of_Square_Numbers)
 
 add_executable(sort_Colors Leetcode/b_75_sort_Colors)
+
+add_executable(Koko_Eating_Bananas Leetcode/c_875_Koko_Eating_Bananas)

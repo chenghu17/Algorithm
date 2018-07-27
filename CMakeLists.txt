@@ -228,3 +228,5 @@ add_executable(Rectangle_Overlap Leetcode/c_836_Rectangle_Overlap)
 add_executable(Longest_Harmonious_Subsequence Leetcode/c_594_Longest_Harmonious_Subsequence)
 
 add_executable(Sum_of_Square_Numbers Leetcode/c_633_Sum_of_Square_Numbers)
+
+add_executable(sort_Colors Leetcode/b_75_sort_Colors)

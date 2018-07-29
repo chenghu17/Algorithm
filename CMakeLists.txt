@@ -234,3 +234,5 @@ add_executable(sort_Colors Leetcode/b_75_sort_Colors)
 add_executable(Koko_Eating_Bananas Leetcode/c_875_Koko_Eating_Bananas)
 
 add_executable(the_first_lack_integer Routine/the_first_lack_integer)
+
+add_executable(Range_Sum_Query_2D_Immutable Leetcode/c_304_Range_Sum_Query_2D_Immutable)

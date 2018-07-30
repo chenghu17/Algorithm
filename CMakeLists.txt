@@ -238,3 +238,5 @@ add_executable(the_first_lack_integer Routine/the_first_lack_integer)
 add_executable(Range_Sum_Query_2D_Immutable Leetcode/c_304_Range_Sum_Query_2D_Immutable)
 
 add_executable(Remove_Duplicated_From_Sorted_Array_II Leetcode/b_80_Remove_Duplicated_From_Sorted_Array_II)
+
+add_executable(Reconstruct_Itinerary Leetcode/c_332_Reconstruct_Itinerary)

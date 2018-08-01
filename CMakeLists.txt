@@ -242,3 +242,5 @@ add_executable(Remove_Duplicated_From_Sorted_Array_II Leetcode/b_80_Remove_Dupli
 add_executable(Reconstruct_Itinerary Leetcode/c_332_Reconstruct_Itinerary)
 
 add_executable(Path_Sum_II Leetcode/c_113_Path_Sum_II.cpp)
+
+add_executable(Convert_BST_to_Greater_Tree Leetcode/c_538_Convert_BST_to_Greater_Tree)

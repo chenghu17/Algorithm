@@ -246,3 +246,5 @@ add_executable(Path_Sum_II Leetcode/c_113_Path_Sum_II.cpp)
 add_executable(Convert_BST_to_Greater_Tree Leetcode/c_538_Convert_BST_to_Greater_Tree)
 
 add_executable(Insertion_Sort_List Leetcode/c_147_Insertion_Sort_List)
+
+add_executable(Is_Subsequence Leetcode/c_392_Is_Subsequence)

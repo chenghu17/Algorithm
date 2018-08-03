@@ -59,6 +59,7 @@ using namespace std;
 
 class Solution {
 public:
+    //  这种方法可以说是使用 贪心算法 的思想
     bool isSubsequence_optimal(string s, string t) {
         bool result = false;
         int t_length = t.size();

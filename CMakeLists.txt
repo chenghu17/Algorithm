@@ -250,3 +250,5 @@ add_executable(Insertion_Sort_List Leetcode/c_147_Insertion_Sort_List)
 add_executable(Is_Subsequence Leetcode/c_392_Is_Subsequence)
 
 add_executable(Delete_Node_in_a_BST Leetcode/c_450_Delete_Node_in_a_BST)
+
+add_executable(Find_the_All_Integer_Pair InterviewQ/Find_the_All_Integer_Pair)

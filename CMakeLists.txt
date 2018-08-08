@@ -256,3 +256,5 @@ add_executable(Find_the_All_Integer_Pair InterviewQ/Find_the_All_Integer_Pair)
 add_executable(Max_Duplication_Area_Number InterviewQ/Max_Duplication_Area_Number)
 
 add_executable(Transpose_Matrix Leetcode/c_867_Transpose_Matrix)
+
+add_executable(Implement_Queue_using_Stacks Leetcode/c_232_Implement_Queue_using_Stacks)

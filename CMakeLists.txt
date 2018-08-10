@@ -260,3 +260,5 @@ add_executable(Transpose_Matrix Leetcode/c_867_Transpose_Matrix)
 add_executable(Implement_Queue_using_Stacks Leetcode/c_232_Implement_Queue_using_Stacks)
 
 add_executable(Most_Frequent_Subtree_Sum Leetcode/c_508_Most_Frequent_Subtree_Sum)
+
+add_executable(Search_in_Rotated_Sorted_Array Leetcode/b_33_Search_in_Rotated_Sorted_Array)

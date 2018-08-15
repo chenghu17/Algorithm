@@ -264,3 +264,5 @@ add_executable(Most_Frequent_Subtree_Sum Leetcode/c_508_Most_Frequent_Subtree_Su
 add_executable(Search_in_Rotated_Sorted_Array Leetcode/b_33_Search_in_Rotated_Sorted_Array)
 
 add_executable(Number_of_Islands Leetcode/c_200_Number_of_Islands)
+
+add_executable(Insert_into_a_Binary_Search_Tree Leetcode/c_701_Insert_into_a_Binary_Search_Tree)

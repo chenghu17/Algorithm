@@ -13,10 +13,18 @@
 // 所以需要保存0出现的位置，以及所有值的乘积结果，最终求某一位的值，即为所有值的乘积除以该值即可得到。
 //
 // solution 2: without division
+// 第二种方法是不进行除法操作的方法，我们知道，要求一个数前后所有数字的乘积，我们可以把它分为两步，
+// 第一步，求前面所有数的乘积；第二步，求后面所有数字的乘积；最后将这个两个部分结合起来。
+// 而进行第一步时，我们可以借助当前数字的前一个值所求得的乘积，乘上前一个数即可得到当前数字前面值的乘积。
+// 所以我们在计算每一个数前面数乘积时，不需要每次重新计算，每次可以借助上一次的结果，将每个数字前面数的乘积保存在新的vector中。
+// 当第二步计算当前数后面所有数的乘积时，以同样的方式，得到后面所有数的乘积，与上一步vector中的结果相乘，当前vector中
+// 对应的结果即为原数据前后数的乘积结果。
+// 这是一个相当巧妙的操作，而且没有进行重复的乘法运算，不包含除法操作，减少了程序的执行时间。
 //
 
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 class Solution {
@@ -52,6 +60,25 @@ public:
         }
         return result;
     }
+
+
+    vector<int> productExceptSelf_optimal(vector<int> &nums) {
+
+        vector<int> result(nums.size());
+        // 从左到右边
+        int left = 1;
+        for (int i = 0; i < nums.size(); ++i) {
+            result[i] = left;
+            left *= nums[i];
+        }
+        //从右向左
+        int right = nums[nums.size() - 1];
+        for (int j = nums.size() - 2; j >= 0; --j) {
+            result[j] *= right;
+            right *= nums[j];
+        }
+        return result;
+    }
 };
 
 int main() {
@@ -61,7 +88,8 @@ int main() {
     nums.emplace_back(3);
     nums.emplace_back(4);
     Solution solution;
-    vector<int> result = solution.productExceptSelf(nums);
+//    vector<int> result = solution.productExceptSelf(nums);
+    vector<int> result = solution.productExceptSelf_optimal(nums);
     for (auto it:result) {
         cout << it << " ";
     }

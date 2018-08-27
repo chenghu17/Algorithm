@@ -8,3 +8,7 @@ c++中类的初始化，不像java和python，例如Book类:
 
 STL封装了许多复杂的数据结构算法和大量常用数据结构操作。
     vector封装数组，list封装了链表，map和set封装了二叉树。
+
+
+c++数据初始化：int letter[26] = {0};
+c++数组重制：memset(letter,0,sizeof(letter)) 或者 memset(letter,0,sizeof(int)*26)

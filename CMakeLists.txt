@@ -268,3 +268,5 @@ add_executable(Number_of_Islands Leetcode/c_200_Number_of_Islands)
 add_executable(Insert_into_a_Binary_Search_Tree Leetcode/c_701_Insert_into_a_Binary_Search_Tree)
 
 add_executable(Product_of_Array_Except_Self Leetcode/c_238_Product_of_Array_Except_Self)
+
+add_executable(Permutation_in_String Leetcode/c_567_Permutation_in_String)

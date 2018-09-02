@@ -276,3 +276,5 @@ add_executable(House_Robber_II Leetcode/c_213_House_Robber_II.cpp)
 add_executable(Minimum_Size_Subarray_Sum Leetcode/c_209_Minimum_Size_Subarray_Sum.cpp)
 
 add_executable(Nim_Game Leetcode/c_292_Nim_Game)
+
+add_executable(Max_Increase_to_Keep_City_Skyline Leetcode/c_807_Max_Increase_to_Keep_City_Skyline.cpp)

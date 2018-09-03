@@ -280,3 +280,5 @@ add_executable(Nim_Game Leetcode/c_292_Nim_Game)
 add_executable(Max_Increase_to_Keep_City_Skyline Leetcode/c_807_Max_Increase_to_Keep_City_Skyline.cpp)
 
 add_executable(Group_Anagrams Leetcode/b_49_Group_Anagrams)
+
+add_executable(Fizz_Buzz Leetcode/c_412_Fizz_Buzz)

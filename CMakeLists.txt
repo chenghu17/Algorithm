@@ -282,3 +282,5 @@ add_executable(Max_Increase_to_Keep_City_Skyline Leetcode/c_807_Max_Increase_to_
 add_executable(Group_Anagrams Leetcode/b_49_Group_Anagrams)
 
 add_executable(Fizz_Buzz Leetcode/c_412_Fizz_Buzz)
+
+add_executable(Daily_Temperatures Leetcode/c_739_Daily_Temperatures)

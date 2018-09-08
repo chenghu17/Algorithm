@@ -286,3 +286,5 @@ add_executable(Fizz_Buzz Leetcode/c_412_Fizz_Buzz)
 add_executable(Daily_Temperatures Leetcode/c_739_Daily_Temperatures)
 
 add_executable(Rotate_String Leetcode/c_796_Rotate_String)
+
+add_executable(Find_the_longest_continuous_number_sum InterviewQ/Find_the_longest_continuous_number_sum)

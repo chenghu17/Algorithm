@@ -22,12 +22,9 @@
 // 来替换掉前面的台阶判断的情况，这种思想就是贪心法，每次保留还能走最远台阶数的位置。
 // 其实这个方法也可以理解为方法二的正向判断。
 //
-//
-//
 
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 class Solution {

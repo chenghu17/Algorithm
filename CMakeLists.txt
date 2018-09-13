@@ -290,3 +290,5 @@ add_executable(Rotate_String Leetcode/c_796_Rotate_String)
 add_executable(Find_the_longest_continuous_number_sum InterviewQ/Find_the_longest_continuous_number_sum)
 
 add_executable(Jump_Game Leetcode/b_55_Jump_Game)
+
+add_executable(Minimum_Distance_Between_BST_Nodes Leetcode/c_783_Minimum_Distance_Between_BST_Nodes)

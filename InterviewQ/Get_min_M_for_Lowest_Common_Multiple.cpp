@@ -24,10 +24,13 @@ int GCD(int a, int b) {
     // Greatest common divisor
     while (a != b) {
         int tmp = a % b;
+        if(tmp==0){
+            break;
+        }
         a = b;
         b = tmp;
     }
-    return a;
+    return b;
 }
 
 int main() {
@@ -44,21 +47,19 @@ int main() {
             gcd_l = GCD(lcm_l, i);
             product_l *= i;
         }
-        lcm_l = product_l / gcd_l;
 
-        int gcd_r = n + 1;
+
+        int gcd_r;
         int m = n + 1;
         int lcm_r = n + 1;
         int product_r = n + 1;
         while (lcm_r % lcm_l != 0) {
             m++;
             product_r *= m;
-            lcm_r = product_r / gcd_r;
             gcd_r = GCD(lcm_r, m);
-
+            lcm_r = product_r / gcd_r;
         }
         cout << m;
     }
-
     return 0;
 }

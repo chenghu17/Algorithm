@@ -302,3 +302,7 @@ add_executable(Find_the_Number_of_Important_City InterviewQ/Find_the_Number_of_I
 add_executable(IsExist_Appropriate_Solution_For_Question InterviewQ/IsExist_Appropriate_Solution_For_Question)
 
 add_executable(Leaf_Similar_Trees Leetcode/c_872_Leaf_Similar_Trees)
+
+add_executable(Combine_m_times_min_power InterviewQ/Combine_m_times_min_power)
+
+add_executable(Implement_strStr Leetcode/b_28_Implement_strStr)

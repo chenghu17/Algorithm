@@ -308,3 +308,7 @@ add_executable(Combine_m_times_min_power InterviewQ/Combine_m_times_min_power)
 add_executable(Implement_strStr Leetcode/b_28_Implement_strStr)
 
 add_executable(same_tree Leetcode/c_100_same_tree.cpp)
+
+add_executable(Binary_Tree_Preorder_Traversal Leetcode/c_144_Binary_Tree_Preorder_Traversal)
+
+add_executable(Binary_Tree_Inorder_Traversal Leetcode/b_94_Binary_Tree_Inorder_Traversal)

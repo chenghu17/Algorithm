@@ -312,3 +312,5 @@ add_executable(same_tree Leetcode/c_100_same_tree.cpp)
 add_executable(Binary_Tree_Preorder_Traversal Leetcode/c_144_Binary_Tree_Preorder_Traversal)
 
 add_executable(Binary_Tree_Inorder_Traversal Leetcode/b_94_Binary_Tree_Inorder_Traversal)
+
+add_executable(Binary_Tree_Postorder_Traversal Leetcode/c_145_Binary_Tree_Postorder_Traversal)

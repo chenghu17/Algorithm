@@ -314,3 +314,5 @@ add_executable(Binary_Tree_Preorder_Traversal Leetcode/c_144_Binary_Tree_Preorde
 add_executable(Binary_Tree_Inorder_Traversal Leetcode/b_94_Binary_Tree_Inorder_Traversal)
 
 add_executable(Binary_Tree_Postorder_Traversal Leetcode/c_145_Binary_Tree_Postorder_Traversal)
+
+add_executable(Find_Duplicate_Number Leetcode/c_287_Find_Duplicate_Number)

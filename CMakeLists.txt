@@ -318,3 +318,5 @@ add_executable(Binary_Tree_Postorder_Traversal Leetcode/c_145_Binary_Tree_Postor
 add_executable(Find_Duplicate_Number Leetcode/c_287_Find_Duplicate_Number)
 
 add_executable(Minimum_Falling_Path_Sum Leetcode/c_931_Minimum_Falling_Path_Sum)
+
+add_executable(Climbing_Stairs Leetcode/b_70_Climbing_Stairs)

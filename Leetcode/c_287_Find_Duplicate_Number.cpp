@@ -23,31 +23,32 @@
 
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 class Solution {
 public:
-    int findDuplicate(vector<int>& nums) {
+    int findDuplicate(vector<int> &nums) {
         // in=place solution
-        int length = nums.size();
-        int tmp=0;
-        for(int i=0;i<length;++i){
-            if(nums[i]!=i+1){
-                if(nums[i]==nums[nums[i]-1]){
+        int length = (int) nums.size();
+        int tmp = 0;
+        for (int i = 0; i < length; ++i) {
+            if (nums[i] != i + 1) {
+                if (nums[i] == nums[nums[i] - 1]) {
                     return nums[i];
-                }
-                else{
+                } else {
                     tmp = nums[i];
-                    nums[i] = nums[tmp-1];
-                    nums[tmp-1] = tmp;
+                    nums[i] = nums[tmp - 1];
+                    nums[tmp - 1] = tmp;
                     --i;
                 }
             }
         }
+        return 0;
     }
 };
 
-int main(){
+int main() {
     vector<int> nums;
     nums.push_back(1);
     nums.push_back(4);
@@ -56,6 +57,6 @@ int main(){
     nums.push_back(2);
     Solution solution;
     int dup_num = solution.findDuplicate(nums);
-    cout<<"duplicate num: "<<dup_num;
+    cout << "duplicate num: " << dup_num;
     return 0;
 }

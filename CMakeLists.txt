@@ -320,3 +320,5 @@ add_executable(Find_Duplicate_Number Leetcode/c_287_Find_Duplicate_Number)
 add_executable(Minimum_Falling_Path_Sum Leetcode/c_931_Minimum_Falling_Path_Sum)
 
 add_executable(Climbing_Stairs Leetcode/b_70_Climbing_Stairs)
+
+add_executable(Symmetric_Tree Leetcode/c_101_Symmetric_Tree)

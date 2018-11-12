@@ -12,10 +12,11 @@
 // 第二个栈在存储当前待访问节点的左右子节点时，先存储右节点，再存储左节点；空节点也存储。
 // 这样做的原因就是首先将该树考虑称满二叉树，然后当分别取两个栈的栈顶元素时，来自于对称位置的节点
 //
+// solution2：使用递归的方法，递归函数的参数为对称的两个节点
+//
 
 #include <iostream>
 #include <stack>
-
 using namespace std;
 
 struct TreeNode {
@@ -28,7 +29,26 @@ struct TreeNode {
 
 class Solution {
 public:
-    bool isSymmetric(TreeNode *root) {
+
+    bool recursive_body(TreeNode *node1, TreeNode *node2) {
+        if (node1 != nullptr && node2 != nullptr) {
+            if (node1->val == node2->val) {
+                return recursive_body(node1->left, node2->right) && recursive_body(node1->right, node2->left);
+            } else {
+                return false;
+            }
+        } else {
+            return node1 == nullptr && node2 == nullptr;
+        }
+    }
+
+    // recursively
+    bool isSymmetric_recursively(TreeNode *root) {
+        return recursive_body(root->left, root->right);
+    }
+
+    // iteratively
+    bool isSymmetric_iteratively(TreeNode *root) {
         stack<TreeNode *> stack1, stack2;
         if (root != nullptr) {
             stack1.push(root);
@@ -75,7 +95,8 @@ int main() {
     right1.left = &right11;
     right1.right = &right12;
     Solution solution;
-    bool result = solution.isSymmetric(&root);
+//    bool result = solution.isSymmetric_iteratively(&root);
+    bool result = solution.isSymmetric_recursively(&root);
     cout << "is symmetric tree?: " << result;
     return 0;
 }

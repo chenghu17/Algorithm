@@ -17,6 +17,7 @@
 
 #include <iostream>
 #include <stack>
+
 using namespace std;
 
 struct TreeNode {
@@ -32,11 +33,8 @@ public:
 
     bool recursive_body(TreeNode *node1, TreeNode *node2) {
         if (node1 != nullptr && node2 != nullptr) {
-            if (node1->val == node2->val) {
-                return recursive_body(node1->left, node2->right) && recursive_body(node1->right, node2->left);
-            } else {
-                return false;
-            }
+            return (node1->val == node2->val) && recursive_body(node1->left, node2->right) &&
+                   recursive_body(node1->right, node2->left);
         } else {
             return node1 == nullptr && node2 == nullptr;
         }

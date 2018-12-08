@@ -324,3 +324,5 @@ add_executable(Climbing_Stairs Leetcode/b_70_Climbing_Stairs)
 add_executable(Symmetric_Tree Leetcode/c_101_Symmetric_Tree)
 
 add_executable(Kth_Smallest_Element_in_a_BST Leetcode/c_230_Kth_Smallest_Element_in_a_BST)
+
+add_executable(Asteroid_Collision Leetcode/c_735_Asteroid_Collision)

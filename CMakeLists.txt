@@ -328,3 +328,5 @@ add_executable(Kth_Smallest_Element_in_a_BST Leetcode/c_230_Kth_Smallest_Element
 add_executable(Asteroid_Collision Leetcode/c_735_Asteroid_Collision)
 
 add_executable(Search_in_a_Binary_Search_Tree Leetcode/c_700_Search_in_a_Binary_Search_Tree)
+
+add_executable(Maximum_Depth_of_Binary_Tree Leetcode/c_104_Maximum_Depth_of_Binary_Tree)

@@ -3,8 +3,13 @@
 //
 // leetcode 112 path sum
 //
-// 题目
+// 题目要求对于给定的二叉树，判断是否存在一条路径，使得该路径上所有节点值的和等于给定的目标结果
 //
+// 这个题目其实就是对于DFS（深度优先搜索）的应用，我在这里使用了循环的方式来遍历每一条路径，并判断该路径和是否等于目标值；
+// 对于不在目标路径上的节点，为防止再次访问，我们使用set数据结构来保存，之后判断节点是否继续概率时也考虑是否已经被访问过，如果访问过，则跳过。
+//
+// 这个题目还可以使用递归的方式来求解，我们可以发现，对于每个节点而言，每次都是需要考虑左右路径，一旦接下来的节点为空，则说明到了根节点，
+// 此时则可以判断累加和与目标结果的值，如果相等，则返回true，不相等则继续递归。
 //
 
 #include <iostream>
@@ -62,8 +67,8 @@ int main() {
     a.left = &b;
     a.right = &c;
     Solution solution;
-    bool result = solution.hasPathSum(&a,3);
-    string res[] = {"False","True"};
-    cout<<"is exist path? "<<res[int(result)];
+    bool result = solution.hasPathSum(&a, 3);
+    string res[] = {"False", "True"};
+    cout << "is exist path? " << res[int(result)];
     return 0;
 }

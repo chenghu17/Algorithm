@@ -338,3 +338,5 @@ add_executable(Convert_Sorted_Array_to_Binary_Search_Tree Leetcode/c_108_Convert
 add_executable(Balanced_Binary_Tree Leetcode/c_110_Balanced_Binary_Tree)
 
 add_executable(Minimum_Depth_of_Binary_Tree Leetcode/c_111_Minimum_Depth_of_Binary_Tree)
+
+add_executable(Path_Sum Leetcode/c_112_Path_Sum)

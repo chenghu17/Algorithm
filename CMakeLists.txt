@@ -342,3 +342,5 @@ add_executable(Minimum_Depth_of_Binary_Tree Leetcode/c_111_Minimum_Depth_of_Bina
 add_executable(Path_Sum Leetcode/c_112_Path_Sum)
 
 add_executable(Invert_Binary_Tree Leetcode/c_226_Invert_Binary_Tree)
+
+add_executable(Binary_Tree_Paths Leetcode/c_257_Binary_Tree_Paths)

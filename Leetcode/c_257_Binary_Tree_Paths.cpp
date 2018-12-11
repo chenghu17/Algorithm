@@ -11,6 +11,8 @@
 // 然后将栈顶元素出栈，使用字符串取子串的方法，将后面2+top.size()个字符进行删除，这就保证了当前节点离开此时的路径时，路径的结果表示也去除了该部分。
 // 由于我们回溯到上一个节点时，并没法判断其左儿子和右儿子是否已经访问过，为了避免重复访问，我们使用一个set（集合）来保存访问过的节点。
 //
+// 另外使用了递归的方法，在递归的过程中，不涉及节点是否之前被访问过，但是在递归函数中，每次需要传递当前访问的节点，和目前已有路径
+//
 
 #include <iostream>
 #include <set>
@@ -29,7 +31,7 @@ struct TreeNode {
 
 class Solution {
 public:
-    vector<string> binaryTreePaths(TreeNode *root) {
+    vector<string> binaryTreePaths_iteratively(TreeNode *root) {
         vector<string> result;
         if (!root) return result;
         if (!root->left && !root->right) {
@@ -66,6 +68,35 @@ public:
         }
         return result;
     }
+
+
+    vector<string> binaryTreePaths_recursively(TreeNode *root) {
+        vector<string> result;
+        if (!root) return result;
+        if (!root->left && !root->right) {
+            result.push_back(to_string(root->val));
+            return result;
+        }
+        string path = to_string(root->val);
+        getTreePath(root, path, result);
+        return result;
+    }
+
+    void getTreePath(TreeNode *node, string path, vector<string> &result) {
+        if (!node->left && !node->right) {
+            result.push_back(path);
+        }
+        if (node->left) {
+            // do something
+            string path_left = path + "->" + to_string(node->left->val);
+            getTreePath(node->left, path_left, result);
+        }
+        if (node->right) {
+            // do something
+            string path_right = path + "->" + to_string(node->right->val);
+            getTreePath(node->right, path_right, result);
+        }
+    }
 };
 
 int main() {
@@ -77,7 +108,8 @@ int main() {
     a.right = &c;
     b.right = &d;
     Solution solution;
-    vector<string> paths = solution.binaryTreePaths(&a);
+//    vector<string> paths = solution.binaryTreePaths_iteratively(&a);
+    vector<string> paths = solution.binaryTreePaths_recursively(&a);
     for (auto it:paths) {
         cout << it << endl;
     }

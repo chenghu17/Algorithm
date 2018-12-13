@@ -46,12 +46,8 @@ public:
         TreeNode *front;
         while (!cur_nodes.empty()) {
             front = cur_nodes.front();
-            if (nodes_num.count(front->val)) {
-                nodes_num[front->val]++;
-                max_count = max(max_count, nodes_num[front->val]);
-            } else {
-                nodes_num[front->val] = 1;
-            }
+            nodes_num[front->val]++;
+            max_count = max(max_count, nodes_num[front->val]);
             if (front->left) {
                 cur_nodes.push(front->left);
             }

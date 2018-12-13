@@ -14,6 +14,8 @@
 // 上面的方法对任意一颗二叉树都可以使用。所以这一点是我们可以思考的地方。。。
 //
 // recursion solution
+// leetcode 的 discussion 中有很很多都是使用map solution，只是在遍历的过程中，没有使用queue来存储当前节点，直接使用recursion的方式
+// 遍历每一个节点，并使用map记录每个节点值出现的次数。
 //
 
 #include <iostream>

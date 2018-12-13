@@ -350,3 +350,5 @@ add_executable(Sum_of_Left_Leaves Leetcode/c_404_Sum_of_Left_Leaves)
 add_executable(N_ary_Tree_Level_Order_Traversal Leetcode/c_429_N_ary_Tree_Level_Order_Traversal)
 
 add_executable(Path_Sum_III Leetcode/c_437_Path_Sum_III.cpp)
+
+add_executable(Find_Mode_in_Binary_Search_Tree Leetcode/c_501_Find_Mode_in_Binary_Search_Tree)

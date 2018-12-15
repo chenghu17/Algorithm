@@ -352,3 +352,5 @@ add_executable(N_ary_Tree_Level_Order_Traversal Leetcode/c_429_N_ary_Tree_Level_
 add_executable(Path_Sum_III Leetcode/c_437_Path_Sum_III.cpp)
 
 add_executable(Find_Mode_in_Binary_Search_Tree Leetcode/c_501_Find_Mode_in_Binary_Search_Tree)
+
+add_executable(Diameter_of_Binary_Tree Leetcode/c_543_Diameter_of_Binary_Tree)

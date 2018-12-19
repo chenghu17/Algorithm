@@ -356,3 +356,5 @@ add_executable(Find_Mode_in_Binary_Search_Tree Leetcode/c_501_Find_Mode_in_Binar
 add_executable(Diameter_of_Binary_Tree Leetcode/c_543_Diameter_of_Binary_Tree)
 
 add_executable(Maximum_Depth_of_N_ary_Tree Leetcode/c_559_Maximum_Depth_of_N_ary_Tree)
+
+add_executable(Binary_Tree_Tilt Leetcode/c_563_Binary_Tree_Tilt)

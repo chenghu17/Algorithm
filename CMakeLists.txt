@@ -362,3 +362,5 @@ add_executable(Binary_Tree_Tilt Leetcode/c_563_Binary_Tree_Tilt)
 add_executable(Subtree_of_Another_Tree Leetcode/c_572_Subtree_of_Another_Tree)
 
 add_executable(N_ary_Tree_Preorder_Traversal Leetcode/c_589_N_ary_Tree_Preorder_Traversal)
+
+add_executable(N_ary_Tree_Postorder_Traversal Leetcode/c_590_N_ary_Tree_Postorder_Traversal)

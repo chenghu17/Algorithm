@@ -3,6 +3,11 @@
 //
 // leetcode 589 n ary tree preorder traversal
 //
+// 题目要求对N叉树进行先序遍历
+//
+// 这里使用递归的方式进行遍历，类似于二叉树的先序遍历，只是在处理节点上，需要循环访问节点的孩子节点。
+// 使用循环的方式进行实现同样需要借助栈(stack)来进行，这里不再重复。
+//
 
 #include <iostream>
 #include <vector>

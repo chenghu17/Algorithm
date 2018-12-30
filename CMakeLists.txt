@@ -366,3 +366,5 @@ add_executable(N_ary_Tree_Preorder_Traversal Leetcode/c_589_N_ary_Tree_Preorder_
 add_executable(N_ary_Tree_Postorder_Traversal Leetcode/c_590_N_ary_Tree_Postorder_Traversal)
 
 add_executable(Construct_String_from_Binary_Tree Leetcode/c_606_Construct_String_from_Binary_Tree)
+
+add_executable(Merge_Two_Binary_Trees Leetcode/c_617_Merge_Two_Binary_Trees)

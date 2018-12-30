@@ -15,3 +15,5 @@ struct ListNode {
 class还可以用于表示模板类型，struct则不行。
 
 但是在C语言中，struct只是作为一种复杂数据结构类型定义，不能用于面向对象编程。这与c++中的struct和class有很明显的差别。
+
+使用ListNode(val) 与 ListNode *node = new ListNode(val);

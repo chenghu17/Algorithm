@@ -54,5 +54,5 @@
 
 malloc/free的使用要点
 
-new/delete的使用要点
+new/delete的使用要点 分配内存空间，返回的是指针
 

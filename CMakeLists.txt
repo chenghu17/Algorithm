@@ -370,3 +370,5 @@ add_executable(Construct_String_from_Binary_Tree Leetcode/c_606_Construct_String
 add_executable(Merge_Two_Binary_Trees Leetcode/c_617_Merge_Two_Binary_Trees)
 
 add_executable(Average_of_Levels_in_Binary_Tree Leetcode/c_637_Average_of_Levels_in_Binary_Tree)
+
+add_executable(Two_Sum_IV_Input_is_a_BST Leetcode/c_653_Two_Sum_IV_Input_is_a_BST)

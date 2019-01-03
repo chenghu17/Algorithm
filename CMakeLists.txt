@@ -378,3 +378,5 @@ add_executable(Trim_a_Binary_Search_Tree Leetcode/c_669_Trim_a_Binary_Search_Tre
 add_executable(Second_Minimum_Node_in_a_Binary_Tree Leetcode/c_671_Second_Minimum_Node_in_a_Binary_Tree)
 
 add_executable(Increasing_Order_Search_Tree Leetcode/c_897_Increasing_Order_Search_Tree)
+
+add_executable(Longest_Univalue_Path Leetcode/c_687_Longest_Univalue_Path)

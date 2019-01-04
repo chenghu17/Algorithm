@@ -382,3 +382,5 @@ add_executable(Increasing_Order_Search_Tree Leetcode/c_897_Increasing_Order_Sear
 add_executable(Longest_Univalue_Path Leetcode/c_687_Longest_Univalue_Path)
 
 add_executable(Univalued_Binary_Tree Leetcode/c_965_Univalued_Binary_Tree)
+
+add_executable(Fair_Candy_Swap Leetcode/c_888_Fair_Candy_Swap)

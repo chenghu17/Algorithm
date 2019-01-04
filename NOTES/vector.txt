@@ -56,3 +56,5 @@ vector<pair<int,int>>的用法：
         points.push_back(a);
         points.push_back(b);
         points.push_back(c);
+
+翻转数组：reverse(vectorname.begin(),vectorname.end())

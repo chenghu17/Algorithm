@@ -388,3 +388,5 @@ add_executable(Fair_Candy_Swap Leetcode/c_888_Fair_Candy_Swap)
 add_executable(Flipping_an_Image Leetcode/c_832_Flipping_an_Image)
 
 add_executable(Magic_Squares_in_Grid Leetcode/c_840_Magic_Squares_in_Grid)
+
+add_executable(Maximize_Distance_to_Closest_Person Leetcode/c_849_Maximize_Distance_to_Closest_Person)

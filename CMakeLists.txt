@@ -392,3 +392,5 @@ add_executable(Magic_Squares_in_Grid Leetcode/c_840_Magic_Squares_in_Grid)
 add_executable(Maximize_Distance_to_Closest_Person Leetcode/c_849_Maximize_Distance_to_Closest_Person)
 
 add_executable(Monotonic_Array Leetcode/c_896_Monotonic_Array)
+
+add_executable(X_of_a_Kind_in_a_Deck_of_Cards Leetcode/c_914_X_of_a_Kind_in_a_Deck_of_Cards)

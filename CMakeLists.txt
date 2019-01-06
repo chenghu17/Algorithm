@@ -394,3 +394,5 @@ add_executable(Maximize_Distance_to_Closest_Person Leetcode/c_849_Maximize_Dista
 add_executable(Monotonic_Array Leetcode/c_896_Monotonic_Array)
 
 add_executable(X_of_a_Kind_in_a_Deck_of_Cards Leetcode/c_914_X_of_a_Kind_in_a_Deck_of_Cards)
+
+add_executable(Sort_Array_By_Parity Leetcode/c_905_Sort_Array_By_Parity)

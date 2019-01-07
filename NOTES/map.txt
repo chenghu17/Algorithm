@@ -19,3 +19,7 @@
 
 多样化:
         map<ListNode*,int> tmp; //使用这种数据格式来存储linked list中的每个节点
+
+
+查找：
+        iterator find(const key_type& k) //如果查找成功，则返回指向该关键字的迭代器；否则返回指向end的迭代器

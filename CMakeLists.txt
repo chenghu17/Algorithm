@@ -400,3 +400,5 @@ add_executable(Sort_Array_By_Parity Leetcode/c_905_Sort_Array_By_Parity)
 add_executable(Sort_Array_By_Parity_II Leetcode/c_922_Sort_Array_By_Parity_II)
 
 add_executable(Valid_Mountain_Array Leetcode/c_941_Valid_Mountain_Array)
+
+add_executable(Word_Pattern Leetcode/c_290_Word_Pattern)

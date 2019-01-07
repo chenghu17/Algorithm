@@ -28,3 +28,9 @@
     string判断子串：
                 stringname.find(substring) == string::npos? true则不为子串；false则为子串。
                 还可以传入int n来规定匹配子串的前n位
+
+    string按索引值取：
+                string str;
+                str[index] // 返回值是char类型
+
+    string也有find方法...用来寻找第一次出现的某个值，返回其index。该方法有多种变形

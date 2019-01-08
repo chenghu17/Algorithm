@@ -18,4 +18,8 @@ STL封装了许多复杂的数据结构算法和大量常用数据结构操作�
     1、不使用new得到的变量，作用域限制在定义类对象的方法中，当方法结束时，类对象也被系统释放了，这种方法安全，不会造成内存系统泄漏。存放在栈中
     2、使用new得到的变量，创建的是指向类对象的指针，作用域变成了全局，当程序结束时，必须使用delete删除，系统不会自动释放。存放在堆中
 
-关于TreeNode为nullptr时，判断条件返回的结果：如果 TreeNode=nullptr，if(TreeNode)为false，可以理解为if(0)
+关于TreeNode为nullptr时，判断条件返回的结果：如果 TreeNode==nullptr，if(TreeNode)为false，可以理解为if(0)
+
+
+关于STL中 hashtable, hashset, hashmap, set, map, multiset 和 multimap 的区别。
+priority_queue、queue、stack等

@@ -412,3 +412,5 @@ add_executable(Employee_Importance Leetcode/c_690_Employee_Importance)
 add_executable(Longest_Word_in_Dictionary Leetcode/c_720_Longest_Word_in_Dictionary)
 
 add_executable(Jewels_and_Stones Leetcode/c_771_Jewels_and_Stones)
+
+add_executable(c_884_Uncommon_Words_from_Two_Sentences Leetcode/c_884_Uncommon_Words_from_Two_Sentences)

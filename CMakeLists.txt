@@ -418,3 +418,5 @@ add_executable(c_884_Uncommon_Words_from_Two_Sentences Leetcode/c_884_Uncommon_W
 add_executable(Verifying_an_Alien_Dictionary Leetcode/c_953_Verifying_an_Alien_Dictionary)
 
 add_executable(Design_Linked_List Leetcode/c_707_Design_Linked_List)
+
+add_executable(Middle_of_the_Linked_List Leetcode/c_876_Middle_of_the_Linked_List)

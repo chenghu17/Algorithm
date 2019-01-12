@@ -428,3 +428,5 @@ add_executable(Nth_Digit Leetcode/c_400_Nth_Digit)
 add_executable(Minimum_Moves_to_Equal_Array_Elements Leetcode/c_453_Minimum_Moves_to_Equal_Array_Elements)
 
 add_executable(Range_Addition_II Leetcode/c_598_Range_Addition_II)
+
+add_executable(Self_Dividing_Numbers Leetcode/c_728_Self_Dividing_Numbers)

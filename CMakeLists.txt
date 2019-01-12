@@ -426,3 +426,5 @@ add_executable(Roman_to_Integer Leetcode/b_13_Roman_to_Integer)
 add_executable(Nth_Digit Leetcode/c_400_Nth_Digit)
 
 add_executable(Minimum_Moves_to_Equal_Array_Elements Leetcode/c_453_Minimum_Moves_to_Equal_Array_Elements)
+
+add_executable(Range_Addition_II Leetcode/c_598_Range_Addition_II)

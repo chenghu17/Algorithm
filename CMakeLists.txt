@@ -434,3 +434,5 @@ add_executable(Self_Dividing_Numbers Leetcode/c_728_Self_Dividing_Numbers)
 add_executable(DI_String_Match Leetcode/c_942_DI_String_Match)
 
 add_executable(Reverse_String Leetcode/c_344_Reverse_String)
+
+add_executable(Backspace_String_Compare Leetcode/c_844_Backspace_String_Compare)

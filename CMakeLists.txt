@@ -436,3 +436,5 @@ add_executable(DI_String_Match Leetcode/c_942_DI_String_Match)
 add_executable(Reverse_String Leetcode/c_344_Reverse_String)
 
 add_executable(Backspace_String_Compare Leetcode/c_844_Backspace_String_Compare)
+
+add_executable(Long_Pressed_Name Leetcode/c_925_Long_Pressed_Name)

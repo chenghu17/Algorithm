@@ -438,3 +438,5 @@ add_executable(Reverse_String Leetcode/c_344_Reverse_String)
 add_executable(Backspace_String_Compare Leetcode/c_844_Backspace_String_Compare)
 
 add_executable(Long_Pressed_Name Leetcode/c_925_Long_Pressed_Name)
+
+add_executable(Detect_Capital Leetcode/c_520_Detect_Capital)

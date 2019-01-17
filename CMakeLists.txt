@@ -450,3 +450,5 @@ add_executable(Robot_Reture_to_Origin Leetcode/c_657_Robot_Reture_to_Origin)
 add_executable(Count_Binary_Substrings Leetcode/c_696_Count_Binary_Substrings.cpp)
 
 add_executable(Rotated_Digits Leetcode/c_788_Rotated_Digits.cpp)
+
+add_executable(Unique_Morse_Code_Words Leetcode/c_804_Unique_Morse_Code_Words.cpp)

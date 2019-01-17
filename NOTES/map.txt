@@ -23,3 +23,7 @@
 
 查找：
         iterator find(const key_type& k) //如果查找成功，则返回指向该关键字的迭代器；否则返回指向end的迭代器
+
+生成pair：
+        pair<type,type> p= make_pair(a,b);
+        map_name.insert(p);

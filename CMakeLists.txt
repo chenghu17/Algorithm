@@ -454,3 +454,5 @@ add_executable(Rotated_Digits Leetcode/c_788_Rotated_Digits.cpp)
 add_executable(Unique_Morse_Code_Words Leetcode/c_804_Unique_Morse_Code_Words.cpp)
 
 add_executable(Buddy_Strings.cpp Leetcode/c_859_Buddy_Strings.cpp)
+
+add_executable(Groups_of_Special_Equivalent_Strings.cpp Leetcode/c_893_Groups_of_Special_Equivalent_Strings.cpp)

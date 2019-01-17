@@ -37,3 +37,5 @@
                 string str[] = {"hello","world"};
 
     string也有find方法...用来寻找第一次出现的某个值，返回其index。该方法有多种变形
+
+    string排序：sort(str.begin(),str.end());

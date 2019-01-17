@@ -413,7 +413,7 @@ add_executable(Longest_Word_in_Dictionary Leetcode/c_720_Longest_Word_in_Diction
 
 add_executable(Jewels_and_Stones Leetcode/c_771_Jewels_and_Stones)
 
-add_executable(c_884_Uncommon_Words_from_Two_Sentences Leetcode/c_884_Uncommon_Words_from_Two_Sentences)
+add_executable(Uncommon_Words_from_Two_Sentences Leetcode/c_884_Uncommon_Words_from_Two_Sentences)
 
 add_executable(Verifying_an_Alien_Dictionary Leetcode/c_953_Verifying_an_Alien_Dictionary)
 
@@ -448,3 +448,5 @@ add_executable(Reverse_Words_in_a_String_III Leetcode/c_557_Reverse_Words_in_a_S
 add_executable(Robot_Reture_to_Origin Leetcode/c_657_Robot_Reture_to_Origin)
 
 add_executable(Count_Binary_Substrings Leetcode/c_696_Count_Binary_Substrings.cpp)
+
+add_executable(Rotated_Digits Leetcode/c_788_Rotated_Digits.cpp)

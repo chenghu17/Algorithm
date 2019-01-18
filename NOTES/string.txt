@@ -40,6 +40,8 @@
 
     string排序：sort(str.begin(),str.end());
 
+    string删除某一位置字符：erase方法
+
     处理string对象的字符常用方法如下：
         isalnum()：判断字符是否是字母或数字；
         isalpha()：判断字符是否是字母；

@@ -458,3 +458,5 @@ add_executable(Buddy_Strings.cpp Leetcode/c_859_Buddy_Strings.cpp)
 add_executable(Groups_of_Special_Equivalent_Strings.cpp Leetcode/c_893_Groups_of_Special_Equivalent_Strings.cpp)
 
 add_executable(Reverse_Only_Letters Leetcode/c_917_Reverse_Only_Letters.cpp)
+
+add_executable(Unique_Email_Addresses Leetcode/c_929_Unique_Email_Addresses.cpp)

@@ -39,3 +39,16 @@
     string也有find方法...用来寻找第一次出现的某个值，返回其index。该方法有多种变形
 
     string排序：sort(str.begin(),str.end());
+
+    处理string对象的字符常用方法如下：
+        isalnum()：判断字符是否是字母或数字；
+        isalpha()：判断字符是否是字母；
+        iscntrl()：判断字符是否是控制字符；
+        isdigit()：判断字符是否是数字；
+        isgraph()：判断字符是否是可打印的非空格字符；
+        ispunct()：判断字符是否是标点符号；
+        isspace()：判断字符是否是空白字符；
+        isupper()：判断字符是否是大写字母；
+        isxdigit()：判断字符是否是十六进制数；
+        toupper()：转换为大写字母；
+        tolower()：转换为小写字母。

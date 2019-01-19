@@ -40,3 +40,6 @@ d、错过了初始化时机（memset误区）
         memset(a, 1, sizeof(a));
         将只会对前sizeof(a)即40个字节进行赋值１的操作，即给“前５个int”进行了赋值0x01010101的操作。
         如果想正确赋值，就只能循环依次初始化。
+
+5、关于stable_sort()和sort()，partition()和stable_partition()的区别。
+    都是存在第三个compare参数，需要我们自己去定义compare方法，然后对前面的数组逐个进行比较。

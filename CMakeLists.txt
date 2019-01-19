@@ -460,3 +460,5 @@ add_executable(Groups_of_Special_Equivalent_Strings.cpp Leetcode/c_893_Groups_of
 add_executable(Reverse_Only_Letters Leetcode/c_917_Reverse_Only_Letters.cpp)
 
 add_executable(Unique_Email_Addresses Leetcode/c_929_Unique_Email_Addresses.cpp)
+
+add_executable(heaters Leetcode/c_475_heaters.cpp)

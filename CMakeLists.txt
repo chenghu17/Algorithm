@@ -462,3 +462,5 @@ add_executable(Reverse_Only_Letters Leetcode/c_917_Reverse_Only_Letters.cpp)
 add_executable(Unique_Email_Addresses Leetcode/c_929_Unique_Email_Addresses.cpp)
 
 add_executable(heaters Leetcode/c_475_heaters.cpp)
+
+add_executable(K_Closet_Points_to_Origin.cpp Leetcode/c_973_K_Closet_Points_to_Origin.cpp)

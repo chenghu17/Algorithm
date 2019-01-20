@@ -17,6 +17,8 @@
 //
 // 这里也可以使用multiset的方式，毕竟set会自动排序，multiset<vector<int>,Compare>即可
 //
+// partial_sort也可以解该题，分治的思想
+//
 // 最近K的问题都可以利用这两种数据结构来解答
 //
 

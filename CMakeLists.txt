@@ -468,3 +468,5 @@ add_executable(K_Closet_Points_to_Origin.cpp Leetcode/c_973_K_Closet_Points_to_O
 add_executable(House_Robber Leetcode/c_198_House_Robber.cpp)
 
 add_executable(Range_Sum_Query_Immutable Leetcode/c_303_Range_Sum_Query_Immutable.cpp)
+
+add_executable(Binary_Watch Leetcode/c_401_Binary_Watch.cpp)

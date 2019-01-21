@@ -472,3 +472,5 @@ add_executable(Range_Sum_Query_Immutable Leetcode/c_303_Range_Sum_Query_Immutabl
 add_executable(Binary_Watch Leetcode/c_401_Binary_Watch.cpp)
 
 add_executable(Letter_Case_Permutation Leetcode/c_784_Letter_Case_Permutation.cpp)
+
+add_executable(Next_Greater_Element_I Leetcode/c_496_Next_Greater_Element_I.cpp)

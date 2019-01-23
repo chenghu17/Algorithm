@@ -476,3 +476,7 @@ add_executable(Letter_Case_Permutation Leetcode/c_784_Letter_Case_Permutation.cp
 add_executable(Next_Greater_Element_I Leetcode/c_496_Next_Greater_Element_I.cpp)
 
 add_executable(Kth_Largest_Element_in_a_Stream Leetcode/c_703_Kth_Largest_Element_in_a_Stream.cpp)
+
+add_executable(Squares_of_a_Sorted_Array Leetcode/c_977_Squares_of_a_Sorted_Array.cpp)
+
+add_executable(Flood_Fill Leetcode/c_733_Flood_Fill.cpp)

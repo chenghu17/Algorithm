@@ -480,3 +480,7 @@ add_executable(Kth_Largest_Element_in_a_Stream Leetcode/c_703_Kth_Largest_Elemen
 add_executable(Squares_of_a_Sorted_Array Leetcode/c_977_Squares_of_a_Sorted_Array.cpp)
 
 add_executable(Flood_Fill Leetcode/c_733_Flood_Fill.cpp)
+
+add_executable(Minimum_Absolute_Difference_in_BST Leetcode/c_530_Minimum_Absolute_Difference_in_BST.cpp)
+
+add_executable(Number_of_Recent_Calls Leetcode/c_933_Number_of_Recent_Calls)

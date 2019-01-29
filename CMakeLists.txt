@@ -492,3 +492,5 @@ add_executable(Fibonacci_Number Leetcode/c_509_Fibonacci_Number.cpp)
 add_executable(Largest_Perimeter_Triangle Leetcode/c_976_Largest_Perimeter_Triangle.cpp)
 
 add_executable(Repeated_Element_in_Size_2N_Array Leetcode/c_961_N_Repeated_Element_in_Size_2N_Array.cpp)
+
+add_executable(Binary_Gap Leetcode/c_868_Binary_Gap.cpp)

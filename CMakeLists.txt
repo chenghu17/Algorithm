@@ -494,3 +494,5 @@ add_executable(Largest_Perimeter_Triangle Leetcode/c_976_Largest_Perimeter_Trian
 add_executable(Repeated_Element_in_Size_2N_Array Leetcode/c_961_N_Repeated_Element_in_Size_2N_Array.cpp)
 
 add_executable(Binary_Gap Leetcode/c_868_Binary_Gap.cpp)
+
+add_executable(Largest_Time_for_Given_Digits Leetcode/c_949_Largest_Time_for_Given_Digits)

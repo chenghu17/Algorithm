@@ -3,145 +3,145 @@ project(Algorithm)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Algorithm tmp.cpp)
+add_executable(Algorithm tmp)
 
-add_executable(Two_Sum Leetcode/a_1_Two_Sum.cpp)
+add_executable(Two_Sum Leetcode/a_1_Two_Sum)
 
-add_executable(Remove_Duplicates Leetcode/b_26_Remove_Duplicates.cpp)
+add_executable(Remove_Duplicates Leetcode/b_26_Remove_Duplicates)
 
-add_executable(Judge_Square InterviewQ/Judge_Square.cpp)
+add_executable(Judge_Square InterviewQ/Judge_Square)
 
-add_executable(Judge_Direction InterviewQ/Judge_Direction.cpp)
+add_executable(Judge_Direction InterviewQ/Judge_Direction)
 
-add_executable(Reverse_Integer Leetcode/a_7_Reverse_Integer.cpp)
+add_executable(Reverse_Integer Leetcode/a_7_Reverse_Integer)
 
-add_executable(Remove_Element Leetcode/b_27_Remove_Element.cpp)
+add_executable(Remove_Element Leetcode/b_27_Remove_Element)
 
-add_executable(Plus_One Leetcode/b_66_Plus_One.cpp)
+add_executable(Plus_One Leetcode/b_66_Plus_One)
 
-add_executable(Insert_Position Leetcode/b_35_Insert_Position.cpp)
+add_executable(Insert_Position Leetcode/b_35_Insert_Position)
 
-add_executable(Maximum_Subarray Leetcode/b_53_Maximum_Subarray.cpp)
+add_executable(Maximum_Subarray Leetcode/b_53_Maximum_Subarray)
 
-add_executable(Palindrome_Number Leetcode/a_9_Palindrome_Number.cpp)
+add_executable(Palindrome_Number Leetcode/a_9_Palindrome_Number)
 
-add_executable(Merge_Sorted_Array Leetcode/b_88_Merge_Sorted_Array.cpp)
+add_executable(Merge_Sorted_Array Leetcode/b_88_Merge_Sorted_Array)
 
-add_executable(Pascal_Triangle Leetcode/c_118_Pascal_Triangle.cpp)
+add_executable(Pascal_Triangle Leetcode/c_118_Pascal_Triangle)
 
-add_executable(Pascal_Triangle_two Leetcode/c_119_Pascal_Triangle_two.cpp)
+add_executable(Pascal_Triangle_two Leetcode/c_119_Pascal_Triangle_two)
 
-add_executable(Buy_Sell_Stock Leetcode/c_121_Buy_Sell_Stock.cpp)
+add_executable(Buy_Sell_Stock Leetcode/c_121_Buy_Sell_Stock)
 
-add_executable(Zero_Number_N_Factorial Routine/Zero_Number_N_Factorial.cpp)
+add_executable(Zero_Number_N_Factorial Routine/Zero_Number_N_Factorial)
 
-add_executable(Buy_Sell_Stock_two Leetcode/c_122_Buy_Sell_Stock_two.cpp)
+add_executable(Buy_Sell_Stock_two Leetcode/c_122_Buy_Sell_Stock_two)
 
-add_executable(Two_Sum_two Leetcode/c_167_Two_Sum_Two.cpp)
+add_executable(Two_Sum_two Leetcode/c_167_Two_Sum_Two)
 
-add_executable(Majority_Element Leetcode/c_169_Majority_Element.cpp)
+add_executable(Majority_Element Leetcode/c_169_Majority_Element)
 
-add_executable(Contains_Duplicate Leetcode/c_217_Contains_Duplicate.cpp)
+add_executable(Contains_Duplicate Leetcode/c_217_Contains_Duplicate)
 
-add_executable(Contains_Duplicate_two Leetcode/c_219_Contains_Duplicate_two.cpp)
+add_executable(Contains_Duplicate_two Leetcode/c_219_Contains_Duplicate_two)
 
-add_executable(Missing_Number Leetcode/c_268_Missing_Number.cpp)
+add_executable(Missing_Number Leetcode/c_268_Missing_Number)
 
-add_executable(Move_Zeroes Leetcode/c_283_Move_Zeroes.cpp)
+add_executable(Move_Zeroes Leetcode/c_283_Move_Zeroes)
 
-add_executable(Third_Maximum_Number Leetcode/c_414_Third_Maximum_Number.cpp)
+add_executable(Third_Maximum_Number Leetcode/c_414_Third_Maximum_Number)
 
-add_executable(Fine_All_Numbers_Disappeared Leetcode/c_448_Fine_All_Numbers_Missing.cpp)
+add_executable(Fine_All_Numbers_Disappeared Leetcode/c_448_Fine_All_Numbers_Missing)
 
-add_executable(Max_Consecutive_Ones Leetcode/c_485_Max_Consecutive_Ones.cpp)
+add_executable(Max_Consecutive_Ones Leetcode/c_485_Max_Consecutive_Ones)
 
-add_executable(K_diff_Pairs Leetcode/c_532_K_diff_Pairs_in_an_Array.cpp)
+add_executable(K_diff_Pairs Leetcode/c_532_K_diff_Pairs_in_an_Array)
 
-add_executable(Array_Partition_I Leetcode/c_561_Array_Partition_I.cpp)
+add_executable(Array_Partition_I Leetcode/c_561_Array_Partition_I)
 
-add_executable(Reshape_the_Matrix Leetcode/c_566_Reshape_the_Matrix.cpp)
+add_executable(Reshape_the_Matrix Leetcode/c_566_Reshape_the_Matrix)
 
-add_executable(Shortest_Unsorted_Continuous_Subarray Leetcode/c_581_Shortest_Unsorted_Continuous_Subarray.cpp)
+add_executable(Shortest_Unsorted_Continuous_Subarray Leetcode/c_581_Shortest_Unsorted_Continuous_Subarray)
 
-add_executable(Can_Place_Flowers Leetcode/c_605_Can_Place_Flowers.cpp)
+add_executable(Can_Place_Flowers Leetcode/c_605_Can_Place_Flowers)
 
-add_executable(Maximum_Product_of_Three_Numbers Leetcode/c_628_Maximum_Product_of_Three_Numbers.cpp)
+add_executable(Maximum_Product_of_Three_Numbers Leetcode/c_628_Maximum_Product_of_Three_Numbers)
 
-add_executable(Rotate_Array Leetcode/c_189_Rotate_Array.cpp)
+add_executable(Rotate_Array Leetcode/c_189_Rotate_Array)
 
-add_executable(Maximum_Average_Subarray_I Leetcode/c_643_Maximum_Average_Subarray_I.cpp)
+add_executable(Maximum_Average_Subarray_I Leetcode/c_643_Maximum_Average_Subarray_I)
 
-add_executable(Image_Smoother Leetcode/c_661_Image_Smoother.cpp)
+add_executable(Image_Smoother Leetcode/c_661_Image_Smoother)
 
-add_executable(Longest_Continuous_Increasing_Subsequence Leetcode/c_674_Longest_Continuous_Increasing_Subsequence.cpp)
+add_executable(Longest_Continuous_Increasing_Subsequence Leetcode/c_674_Longest_Continuous_Increasing_Subsequence)
 
-add_executable(Max_Area_of_Island Leetcode/c_695_Max_Area_of_Island.cpp)
+add_executable(Max_Area_of_Island Leetcode/c_695_Max_Area_of_Island)
 
-add_executable(Degree_of_an_Array Leetcode/c_697_Degree_of_an_Array.cpp)
+add_executable(Degree_of_an_Array Leetcode/c_697_Degree_of_an_Array)
 
-add_executable(1_bit_and_2_bit_Characters Leetcode/c_717_1_bit_and_2_bit_Characters.cpp)
+add_executable(1_bit_and_2_bit_Characters Leetcode/c_717_1_bit_and_2_bit_Characters)
 
-add_executable(Find_Pivot_Index Leetcode/c_724_Find_Pivot_Index.cpp)
+add_executable(Find_Pivot_Index Leetcode/c_724_Find_Pivot_Index)
 
-add_executable(Largest_Number_At_Least_Twice_of_others Leetcode/c_747_Largest_Number_At_Least_Twice_of_Others.cpp)
+add_executable(Largest_Number_At_Least_Twice_of_others Leetcode/c_747_Largest_Number_At_Least_Twice_of_Others)
 
-add_executable(Non_decreasing_Array Leetcode/c_665_Non_decreasing_Array.cpp)
+add_executable(Non_decreasing_Array Leetcode/c_665_Non_decreasing_Array)
 
-add_executable(Toeplitz_Matrix Leetcode/c_766_Toeplitz_Matrix.cpp)
+add_executable(Toeplitz_Matrix Leetcode/c_766_Toeplitz_Matrix)
 
-add_executable(Min_Cost_Climbing_Stairs Leetcode/c_746_Min_Cost_Climbing_Stairs.cpp)
+add_executable(Min_Cost_Climbing_Stairs Leetcode/c_746_Min_Cost_Climbing_Stairs)
 
-add_executable(Single_Number Leetcode/c_136_Single_Number.cpp)
+add_executable(Single_Number Leetcode/c_136_Single_Number)
 
-add_executable(Happy_Number Leetcode/c_202_Happy_Number.cpp)
+add_executable(Happy_Number Leetcode/c_202_Happy_Number)
 
-add_executable(Count_Primes Leetcode/c_204_Count_Primes.cpp)
+add_executable(Count_Primes Leetcode/c_204_Count_Primes)
 
-add_executable(Valid_Anagram Leetcode/c_242_Valid_Anagram.cpp)
+add_executable(Valid_Anagram Leetcode/c_242_Valid_Anagram)
 
-add_executable(Isomorphc_Strings Leetcode/c_205_Isomorphic_Strings.cpp)
+add_executable(Isomorphc_Strings Leetcode/c_205_Isomorphic_Strings)
 
-add_executable(Intersection_of_Two_Arrays Leetcode/c_349_Intersection_of_Two_Arrays.cpp)
+add_executable(Intersection_of_Two_Arrays Leetcode/c_349_Intersection_of_Two_Arrays)
 
-add_executable(Count_and_Say Leetcode/b_38_Count_and_Say.cpp)
+add_executable(Count_and_Say Leetcode/b_38_Count_and_Say)
 
-add_executable(Remove_Duplicated_From_Sorted_List Leetcode/b_83_Remove_Duplicates_From_Sorted_List.cpp)
+add_executable(Remove_Duplicated_From_Sorted_List Leetcode/b_83_Remove_Duplicates_From_Sorted_List)
 
-add_executable(Add_Binary Leetcode/b_67_Add_Binary.cpp)
+add_executable(Add_Binary Leetcode/b_67_Add_Binary)
 
-add_executable(Buy_with_Which_method Routine/Buy_with_Which_method.cpp)
+add_executable(Buy_with_Which_method Routine/Buy_with_Which_method)
 
-add_executable(Buy_with_Coke Routine/Buy_with_Coke.cpp)
+add_executable(Buy_with_Coke Routine/Buy_with_Coke)
 
-add_executable(Intersection_of_Two_Arrays_2 Leetcode/c_350_Intersection_of_Two_Arrays_2.cpp)
+add_executable(Intersection_of_Two_Arrays_2 Leetcode/c_350_Intersection_of_Two_Arrays_2)
 
-add_executable(Merge_Two_Sorted_Lists Leetcode/b_21_Merge_Two_Sorted_Lists.cpp)
+add_executable(Merge_Two_Sorted_Lists Leetcode/b_21_Merge_Two_Sorted_Lists)
 
-add_executable(Reverse_Linked_List Leetcode/c_206_Reverse_Linked_List.cpp)
+add_executable(Reverse_Linked_List Leetcode/c_206_Reverse_Linked_List)
 
-add_executable(Excel_Sheet_Column_Number Leetcode/c_171_Excel_Sheet_Column_Number.cpp)
+add_executable(Excel_Sheet_Column_Number Leetcode/c_171_Excel_Sheet_Column_Number)
 
-add_executable(Power_of_Two Leetcode/c_231_Power_of_Two.cpp)
+add_executable(Power_of_Two Leetcode/c_231_Power_of_Two)
 
-add_executable(Factorial_Trailing_Zeroes Leetcode/c_172_Factorial_Trailing_Zeroes.cpp)
+add_executable(Factorial_Trailing_Zeroes Leetcode/c_172_Factorial_Trailing_Zeroes)
 
-add_executable(Power_of_Three Leetcode/c_326_Power_of_Three.cpp)
+add_executable(Power_of_Three Leetcode/c_326_Power_of_Three)
 
-add_executable(Add_Digits Leetcode/c_258_Add_Digits.cpp)
+add_executable(Add_Digits Leetcode/c_258_Add_Digits)
 
-add_executable(First_Unique_Character_in_a_String Leetcode/c_387_First_Unique_Character_in_a_String.cpp)
+add_executable(First_Unique_Character_in_a_String Leetcode/c_387_First_Unique_Character_in_a_String)
 
-add_executable(Find_the_Difference Leetcode/c_389_Find_the_Difference.cpp)
+add_executable(Find_the_Difference Leetcode/c_389_Find_the_Difference)
 
-add_executable(Longest_Palindrome Leetcode/c_409_Longest_Palindrome.cpp)
+add_executable(Longest_Palindrome Leetcode/c_409_Longest_Palindrome)
 
-add_executable(Find_All_Anagrams_in_a_String Leetcode/c_438_Find_All_Anagrams_in_a_String.cpp)
+add_executable(Find_All_Anagrams_in_a_String Leetcode/c_438_Find_All_Anagrams_in_a_String)
 
-add_executable(Number_of_Boomerangs Leetcode/c_447_Number_of_Boomerangs.cpp)
+add_executable(Number_of_Boomerangs Leetcode/c_447_Number_of_Boomerangs)
 
-add_executable(Island_Perimeter Leetcode/c_463_Island_Perimeter.cpp)
+add_executable(Island_Perimeter Leetcode/c_463_Island_Perimeter)
 
-add_executable(Keyboard_Row Leetcode/c_500_Keyboard_Row.cpp)
+add_executable(Keyboard_Row Leetcode/c_500_Keyboard_Row)
 
 add_executable(Distribute_Candies Leetcode/c_575_Distribute_Candies)
 
@@ -151,11 +151,11 @@ add_executable(Find_Top_k_duplication InterviewQ/Find_Top_k_duplication)
 
 add_executable(Delete_Node_in_a_Linked_List Leetcode/c_237_Delete_Node_in_a_Linked_List)
 
-add_executable(Remove_Linked_List_Elements Leetcode/c_203_Remove_Linked_List_Elements.cpp)
+add_executable(Remove_Linked_List_Elements Leetcode/c_203_Remove_Linked_List_Elements)
 
-add_executable(Add_Strings Leetcode/c_415_Add_Strings.cpp)
+add_executable(Add_Strings Leetcode/c_415_Add_Strings)
 
-add_executable(Ugly_Number Leetcode/c_263_Ugly_Number.cpp)
+add_executable(Ugly_Number Leetcode/c_263_Ugly_Number)
 
 add_executable(Intersection_of_Two_Linked_Lists Leetcode/c_160_Intersection_of_Two_Linked_Lists)
 
@@ -171,19 +171,19 @@ add_executable(Ransom_Note Leetcode/c_383_Ransom_Note)
 
 add_executable(Length_of_Last_Word Leetcode/b_58_Length_of_Last_word)
 
-add_executable(Number_of_Segments_in_a_String Leetcode/c_434_Number_of_Segments_in_a_String.cpp)
+add_executable(Number_of_Segments_in_a_String Leetcode/c_434_Number_of_Segments_in_a_String)
 
 add_executable(Repeated_Substring_Pattern Leetcode/c_459_Repeated_Substring_Pattern)
 
-add_executable(String_Compression Leetcode/c_443_String_Compression.cpp)
+add_executable(String_Compression Leetcode/c_443_String_Compression)
 
-add_executable(Valid_Palindrome_II Leetcode/c_680_Valid_Palindrome_II.cpp)
+add_executable(Valid_Palindrome_II Leetcode/c_680_Valid_Palindrome_II)
 
-add_executable(Reverse_String_II Leetcode/c_541_Reverse_String_II.cpp)
+add_executable(Reverse_String_II Leetcode/c_541_Reverse_String_II)
 
-add_executable(Repeated_String_Match Leetcode/c_686_Repeated_String_Match.cpp)
+add_executable(Repeated_String_Match Leetcode/c_686_Repeated_String_Match)
 
-add_executable(Valid_Perfect_Square Leetcode/c_367_Valid_Perfect_Square.cpp)
+add_executable(Valid_Perfect_Square Leetcode/c_367_Valid_Perfect_Square)
 
 add_executable(Guess_Number_Higher_or_Lower Leetcode/c_374_Guess_Number_Higher_or_Lower)
 
@@ -193,21 +193,21 @@ add_executable(Student_Attendance_Record_I Leetcode/c_551_Student_Attendance_Rec
 
 add_executable(Sqrt_x Leetcode/b_69_Sqrt_x)
 
-add_executable(Peak_Index_in_a_Mountain Leetcode/c_852_Peak_Index_in_a_Mountain.cpp)
+add_executable(Peak_Index_in_a_Mountain Leetcode/c_852_Peak_Index_in_a_Mountain)
 
 add_executable(Kth_Largest_Element_in_an_Array Leetcode/c_215_Kth_Largest_Element_in_an_Array)
 
 add_executable(Positions_of_Large_Groups Leetcode/c_830_Positions_of_Large_Groups)
 
-add_executable(Go_up_the_stairs InterviewQ/Go_Up_the_Stairs.cpp)
+add_executable(Go_up_the_stairs InterviewQ/Go_Up_the_Stairs)
 
-add_executable(Valid_Parentheses Leetcode/b_20_Valid_Parentheses.cpp)
+add_executable(Valid_Parentheses Leetcode/b_20_Valid_Parentheses)
 
 add_executable(Valid_Palindrome Leetcode/c_125_Valid_Palindrome)
 
 add_executable(Min_Stack Leetcode/c_155_Min_Stack)
 
-add_executable(Implement_Stack_using_Queues Leetcode/c_225_Implement_Stack_using_Queues.cpp)
+add_executable(Implement_Stack_using_Queues Leetcode/c_225_Implement_Stack_using_Queues)
 
 add_executable(First_Bad_Version Leetcode/c_278_First_Bad_Version)
 
@@ -215,7 +215,7 @@ add_executable(Binary_Search Leetcode/c_704_Binary_Search)
 
 add_executable(Wiggle_Sort_II Leetcode/c_324_Wiggle_Sort_II)
 
-add_executable(Baseball_Game Leetcode/c_682_Baseball_Game.cpp)
+add_executable(Baseball_Game Leetcode/c_682_Baseball_Game)
 
 add_executable(reverse_single_linked_list Routine/reverse_single_linked_list)
 
@@ -241,7 +241,7 @@ add_executable(Remove_Duplicated_From_Sorted_Array_II Leetcode/b_80_Remove_Dupli
 
 add_executable(Reconstruct_Itinerary Leetcode/c_332_Reconstruct_Itinerary)
 
-add_executable(Path_Sum_II Leetcode/c_113_Path_Sum_II.cpp)
+add_executable(Path_Sum_II Leetcode/c_113_Path_Sum_II)
 
 add_executable(Convert_BST_to_Greater_Tree Leetcode/c_538_Convert_BST_to_Greater_Tree)
 
@@ -271,13 +271,13 @@ add_executable(Product_of_Array_Except_Self Leetcode/c_238_Product_of_Array_Exce
 
 add_executable(Permutation_in_String Leetcode/c_567_Permutation_in_String)
 
-add_executable(House_Robber_II Leetcode/c_213_House_Robber_II.cpp)
+add_executable(House_Robber_II Leetcode/c_213_House_Robber_II)
 
-add_executable(Minimum_Size_Subarray_Sum Leetcode/c_209_Minimum_Size_Subarray_Sum.cpp)
+add_executable(Minimum_Size_Subarray_Sum Leetcode/c_209_Minimum_Size_Subarray_Sum)
 
 add_executable(Nim_Game Leetcode/c_292_Nim_Game)
 
-add_executable(Max_Increase_to_Keep_City_Skyline Leetcode/c_807_Max_Increase_to_Keep_City_Skyline.cpp)
+add_executable(Max_Increase_to_Keep_City_Skyline Leetcode/c_807_Max_Increase_to_Keep_City_Skyline)
 
 add_executable(Group_Anagrams Leetcode/b_49_Group_Anagrams)
 
@@ -307,7 +307,7 @@ add_executable(Combine_m_times_min_power InterviewQ/Combine_m_times_min_power)
 
 add_executable(Implement_strStr Leetcode/b_28_Implement_strStr)
 
-add_executable(same_tree Leetcode/c_100_same_tree.cpp)
+add_executable(same_tree Leetcode/c_100_same_tree)
 
 add_executable(Binary_Tree_Preorder_Traversal Leetcode/c_144_Binary_Tree_Preorder_Traversal)
 
@@ -349,7 +349,7 @@ add_executable(Sum_of_Left_Leaves Leetcode/c_404_Sum_of_Left_Leaves)
 
 add_executable(N_ary_Tree_Level_Order_Traversal Leetcode/c_429_N_ary_Tree_Level_Order_Traversal)
 
-add_executable(Path_Sum_III Leetcode/c_437_Path_Sum_III.cpp)
+add_executable(Path_Sum_III Leetcode/c_437_Path_Sum_III)
 
 add_executable(Find_Mode_in_Binary_Search_Tree Leetcode/c_501_Find_Mode_in_Binary_Search_Tree)
 
@@ -447,52 +447,54 @@ add_executable(Reverse_Words_in_a_String_III Leetcode/c_557_Reverse_Words_in_a_S
 
 add_executable(Robot_Reture_to_Origin Leetcode/c_657_Robot_Reture_to_Origin)
 
-add_executable(Count_Binary_Substrings Leetcode/c_696_Count_Binary_Substrings.cpp)
+add_executable(Count_Binary_Substrings Leetcode/c_696_Count_Binary_Substrings)
 
-add_executable(Rotated_Digits Leetcode/c_788_Rotated_Digits.cpp)
+add_executable(Rotated_Digits Leetcode/c_788_Rotated_Digits)
 
-add_executable(Unique_Morse_Code_Words Leetcode/c_804_Unique_Morse_Code_Words.cpp)
+add_executable(Unique_Morse_Code_Words Leetcode/c_804_Unique_Morse_Code_Words)
 
-add_executable(Buddy_Strings.cpp Leetcode/c_859_Buddy_Strings.cpp)
+add_executable(Buddy_Strings Leetcode/c_859_Buddy_Strings)
 
-add_executable(Groups_of_Special_Equivalent_Strings.cpp Leetcode/c_893_Groups_of_Special_Equivalent_Strings.cpp)
+add_executable(Groups_of_Special_Equivalent_Strings Leetcode/c_893_Groups_of_Special_Equivalent_Strings)
 
-add_executable(Reverse_Only_Letters Leetcode/c_917_Reverse_Only_Letters.cpp)
+add_executable(Reverse_Only_Letters Leetcode/c_917_Reverse_Only_Letters)
 
-add_executable(Unique_Email_Addresses Leetcode/c_929_Unique_Email_Addresses.cpp)
+add_executable(Unique_Email_Addresses Leetcode/c_929_Unique_Email_Addresses)
 
-add_executable(heaters Leetcode/c_475_heaters.cpp)
+add_executable(heaters Leetcode/c_475_heaters)
 
-add_executable(K_Closet_Points_to_Origin.cpp Leetcode/c_973_K_Closet_Points_to_Origin.cpp)
+add_executable(K_Closet_Points_to_Origin Leetcode/c_973_K_Closet_Points_to_Origin)
 
-add_executable(House_Robber Leetcode/c_198_House_Robber.cpp)
+add_executable(House_Robber Leetcode/c_198_House_Robber)
 
-add_executable(Range_Sum_Query_Immutable Leetcode/c_303_Range_Sum_Query_Immutable.cpp)
+add_executable(Range_Sum_Query_Immutable Leetcode/c_303_Range_Sum_Query_Immutable)
 
-add_executable(Binary_Watch Leetcode/c_401_Binary_Watch.cpp)
+add_executable(Binary_Watch Leetcode/c_401_Binary_Watch)
 
-add_executable(Letter_Case_Permutation Leetcode/c_784_Letter_Case_Permutation.cpp)
+add_executable(Letter_Case_Permutation Leetcode/c_784_Letter_Case_Permutation)
 
-add_executable(Next_Greater_Element_I Leetcode/c_496_Next_Greater_Element_I.cpp)
+add_executable(Next_Greater_Element_I Leetcode/c_496_Next_Greater_Element_I)
 
-add_executable(Kth_Largest_Element_in_a_Stream Leetcode/c_703_Kth_Largest_Element_in_a_Stream.cpp)
+add_executable(Kth_Largest_Element_in_a_Stream Leetcode/c_703_Kth_Largest_Element_in_a_Stream)
 
-add_executable(Squares_of_a_Sorted_Array Leetcode/c_977_Squares_of_a_Sorted_Array.cpp)
+add_executable(Squares_of_a_Sorted_Array Leetcode/c_977_Squares_of_a_Sorted_Array)
 
-add_executable(Flood_Fill Leetcode/c_733_Flood_Fill.cpp)
+add_executable(Flood_Fill Leetcode/c_733_Flood_Fill)
 
-add_executable(Minimum_Absolute_Difference_in_BST Leetcode/c_530_Minimum_Absolute_Difference_in_BST.cpp)
+add_executable(Minimum_Absolute_Difference_in_BST Leetcode/c_530_Minimum_Absolute_Difference_in_BST)
 
-add_executable(Number_of_Recent_Calls Leetcode/c_933_Number_of_Recent_Calls.cpp)
+add_executable(Number_of_Recent_Calls Leetcode/c_933_Number_of_Recent_Calls)
 
-add_executable(Surface_Area_of_3D_Shapes Leetcode/c_892_Surface_Area_of_3D_Shapes.cpp)
+add_executable(Surface_Area_of_3D_Shapes Leetcode/c_892_Surface_Area_of_3D_Shapes)
 
-add_executable(Fibonacci_Number Leetcode/c_509_Fibonacci_Number.cpp)
+add_executable(Fibonacci_Number Leetcode/c_509_Fibonacci_Number)
 
-add_executable(Largest_Perimeter_Triangle Leetcode/c_976_Largest_Perimeter_Triangle.cpp)
+add_executable(Largest_Perimeter_Triangle Leetcode/c_976_Largest_Perimeter_Triangle)
 
-add_executable(Repeated_Element_in_Size_2N_Array Leetcode/c_961_N_Repeated_Element_in_Size_2N_Array.cpp)
+add_executable(Repeated_Element_in_Size_2N_Array Leetcode/c_961_N_Repeated_Element_in_Size_2N_Array)
 
-add_executable(Binary_Gap Leetcode/c_868_Binary_Gap.cpp)
+add_executable(Binary_Gap Leetcode/c_868_Binary_Gap)
 
 add_executable(Largest_Time_for_Given_Digits Leetcode/c_949_Largest_Time_for_Given_Digits)
+
+add_executable(Powerful_Integers Leetcode/c_970_Powerful_Integers)

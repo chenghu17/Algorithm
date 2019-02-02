@@ -502,3 +502,5 @@ add_executable(Powerful_Integers Leetcode/c_970_Powerful_Integers)
 add_executable(Projection_Area_of_3D_Shapes Leetcode/c_883_Projection_Area_of_3D_Shapes)
 
 add_executable(Smallest_Range_I Leetcode/c_908_Smallest_Range_I)
+
+add_executable(Assign_Cookies Leetcode/c_455_Assign_Cookies)

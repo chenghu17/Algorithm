@@ -504,3 +504,5 @@ add_executable(Projection_Area_of_3D_Shapes Leetcode/c_883_Projection_Area_of_3D
 add_executable(Smallest_Range_I Leetcode/c_908_Smallest_Range_I)
 
 add_executable(Assign_Cookies Leetcode/c_455_Assign_Cookies)
+
+add_executable(Lemonade_Change Leetcode/c_860_Lemonade_Change)

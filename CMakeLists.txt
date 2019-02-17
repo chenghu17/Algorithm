@@ -507,4 +507,6 @@ add_executable(Assign_Cookies Leetcode/c_455_Assign_Cookies)
 
 add_executable(Lemonade_Change Leetcode/c_860_Lemonade_Change)
 
-add_executable(c_989_Add_to_Array_Form_of_Integer Leetcode/c_989_Add_to_Array_Form_of_Integer)
+add_executable(Add_to_Array_Form_of_Integer Leetcode/c_989_Add_to_Array_Form_of_Integer)
+
+add_executable(Base_7 Leetcode/c_504_Base_7)

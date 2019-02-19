@@ -512,3 +512,5 @@ add_executable(Add_to_Array_Form_of_Integer Leetcode/c_989_Add_to_Array_Form_of_
 add_executable(Base_7 Leetcode/c_504_Base_7)
 
 add_executable(Word_Search Leetcode/b_79_Word_Search)
+
+add_executable(sort_algorithm Routine/sort_algorithm)

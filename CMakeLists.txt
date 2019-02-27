@@ -524,3 +524,5 @@ add_executable(Binary_Tree_Level_Order_Traversal Leetcode/c_102_Binary_Tree_Leve
 add_executable(Longest_Increasing_Subsequence Leetcode/c_300_Longest_Increasing_Subsequence)
 
 add_executable(Combination_Sum Leetcode/b_39_Combination_Sum)
+
+add_executable(Validate_Binary_Search_Tree Leetcode/b_98_Validate_Binary_Search_Tree)

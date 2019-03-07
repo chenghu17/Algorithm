@@ -530,3 +530,5 @@ add_executable(Validate_Binary_Search_Tree Leetcode/b_98_Validate_Binary_Search_
 add_executable(reConstruct_Binary_Tree Routine/reConstruct_Binary_Tree)
 
 add_executable(Find_max_sum_in_Matrix InterviewQ/Find_max_sum_in_Matrix)
+
+add_executable(Cousins_in_Binary_Tree Leetcode/c_993_Cousins_in_Binary_Tree)

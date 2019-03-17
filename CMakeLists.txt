@@ -542,3 +542,5 @@ add_executable(q3 InterviewQ/bytedance_2019_3_16/question3)
 add_executable(q4 InterviewQ/bytedance_2019_3_16/question4)
 
 add_executable(Coin_Changes Leetcode/c_322_Coin_Changes)
+
+add_executable(Palindromic_Substrings Leetcode/c_647_Palindromic_Substrings)

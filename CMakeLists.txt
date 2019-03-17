@@ -532,3 +532,13 @@ add_executable(reConstruct_Binary_Tree Routine/reConstruct_Binary_Tree)
 add_executable(Find_max_sum_in_Matrix InterviewQ/Find_max_sum_in_Matrix)
 
 add_executable(Cousins_in_Binary_Tree Leetcode/c_993_Cousins_in_Binary_Tree)
+
+add_executable(q1 InterviewQ/bytedance_2019_3_16/question1)
+
+add_executable(q2 InterviewQ/bytedance_2019_3_16/question2)
+
+add_executable(q3 InterviewQ/bytedance_2019_3_16/question3)
+
+add_executable(q4 InterviewQ/bytedance_2019_3_16/question4)
+
+add_executable(Coin_Changes Leetcode/c_322_Coin_Changes)

@@ -550,3 +550,5 @@ add_executable(Palindromic_Substrings Leetcode/c_647_Palindromic_Substrings)
 
 add_executable(Longest_Palindromic_Substring Leetcode/a_5_Longest_Palindromic_Substring)
 
+add_executable(Remove_Nth_Node_From_End_of_List Leetcode/b_19_Remove_Nth_Node_From_End_of_List)
+

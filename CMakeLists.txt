@@ -554,3 +554,5 @@ add_executable(Remove_Nth_Node_From_End_of_List Leetcode/b_19_Remove_Nth_Node_Fr
 
 add_executable(Sum_of_Two_Integers Leetcode/c_371_Sum_of_Two_Integers)
 
+add_executable(LinkNode_last_k_th_Node niuke/LinkNode_last_k_th_Node)
+

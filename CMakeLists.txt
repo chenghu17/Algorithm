@@ -556,6 +556,8 @@ add_executable(Sum_of_Two_Integers Leetcode/c_371_Sum_of_Two_Integers)
 
 add_executable(LinkNode_last_k_th_Node niuke/LinkNode_last_k_th_Node)
 
+add_executable(Frog_Jumping_Stairs_Force niuke/Frog_Jumping_Stairs_Force)
+
 add_executable(Frog_Jumping_Stairs niuke/Frog_Jumping_Stairs)
 
 add_executable(Change_String_Space niuke/Change_String_Space)

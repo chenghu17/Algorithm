@@ -1,25 +1,35 @@
 //
 // Created by Mr.Hu on 2019/9/5.
 //
-// 一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法。
+// 一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法（先后次序不同算不同的结果）。
 //
-// f(1) = 1
-// f(2) = f(1) + 1 = 2*f(1)
-// f(3) = f(2) + f(1) + 1 = f(2) + f(2) = 2*f(2) = 2*2*f(1) = 2^2
-// f(4) = f(3) + f(2) + f(1) + 1 = f(3) + f(3) = 2*f(3) = 2*2*f(2) = 2*2*2*f(1) = 2^3
-// ...
-// f(n) = 2^(n-1)
+// f(n) = f(n-2) + f(n-1)
+// 注意n=1或n=2的特殊情况
 //
 
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
 class Solution {
 public:
-    int jumpFloorII(int number) {
-        return pow(2, number - 1);
+    int jumpFloor(int number) {
+        int first = 1, second = 2;
+        if (number <= 0) {
+            return 0;
+        }
+        if (number == 1 || number == 2) {
+            return number;
+        }
+        number -= 2;
+        int cur = 0;
+        while (number > 0) {
+            cur = first + second;
+            first = second;
+            second = cur;
+            --number;
+        }
+        return cur;
     }
 };
 
@@ -27,7 +37,7 @@ int main() {
     int number;
     cin >> number;
     Solution solution;
-    int solution_num = solution.jumpFloorII(number);
-    cout << solution_num << endl;
+    int method_num = solution.jumpFloor(number);
+    cout << method_num << endl;
     return 0;
 }

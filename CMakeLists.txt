@@ -562,3 +562,5 @@ add_executable(Frog_Jumping_Stairs niuke/Frog_Jumping_Stairs)
 
 add_executable(Change_String_Space niuke/Change_String_Space)
 
+add_executable(Min_Num_in_Rotate_Array niuke/Min_Num_in_Rotate_Array)
+

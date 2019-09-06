@@ -564,3 +564,7 @@ add_executable(Change_String_Space niuke/Change_String_Space)
 
 add_executable(Min_Num_in_Rotate_Array niuke/Min_Num_in_Rotate_Array)
 
+add_executable(Fibonacci niuke/Fibonacci)
+
+add_executable(Rectangle_Cover niuke/Rectangle_Cover)
+

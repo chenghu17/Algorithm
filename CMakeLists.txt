@@ -574,3 +574,5 @@ add_executable(MOCK_EXAMS_Sort_Array_By_Swap_With_Zero niuke/huawei/MOCK_EXAMS_S
 
 add_executable(Binary_Number_of_One niuke/Binary_Number_of_One)
 
+add_executable(Number_Exponent niuke/Number_Exponent)
+

@@ -572,3 +572,5 @@ add_executable(MOCK_EXAMS_Sum_Two_Number niuke/huawei/MOCK_EXAMS_Sum_Two_Number)
 
 add_executable(MOCK_EXAMS_Sort_Array_By_Swap_With_Zero niuke/huawei/MOCK_EXAMS_Sort_Array_By_Swap_With_Zero)
 
+add_executable(Binary_Number_of_One niuke/Binary_Number_of_One)
+

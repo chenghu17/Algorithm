@@ -576,3 +576,8 @@ add_executable(AAAAA_Binary_Number_of_One niuke/AAAAA_Binary_Number_of_One)
 
 add_executable(AAAAA_Number_Exponent niuke/AAAAA_Number_Exponent)
 
+add_executable(AAAAA_Adjust_Array_Odd_Even niuke/AAAAA_Adjust_Array_Odd_Even)
+
+add_executable(the_first_question niuke/huawei/the_first_question)
+
+add_executable(the_second_question niuke/huawei/the_second_question)

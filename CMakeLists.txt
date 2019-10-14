@@ -6,6 +6,10 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(Algorithm tmp)
 
+add_executable(tmp2 tmp2)
+
+add_executable(tmp3 tmp3)
+
 add_executable(Two_Sum Leetcode/a_1_Two_Sum)
 
 add_executable(Remove_Duplicates Leetcode/b_26_Remove_Duplicates)
@@ -589,3 +593,7 @@ add_executable(Merge_Two_Sorted_ListNode niuke/Merge_Two_Sorted_ListNode)
 add_executable(AAAAA_Binary_Tree_Sub_Struc niuke/AAAAA_Binary_Tree_Sub_Struc)
 
 add_executable(Print_Binary_Tree niuke/Print_Binary_Tree)
+
+add_executable(AAAAA_Get_All_Path_of_Sum_in_Binary_Treee niuke/AAAAA_Get_All_Path_of_Sum_in_Binary_Treee)
+
+add_executable(The_Mirror_of_Binary_Tree niuke/The_Mirror_of_Binary_Tree)
